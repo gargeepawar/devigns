@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sameer Singh, Gargee Pawar">
+    <title>Premium Web Design, UI/UX & Branding Services | Devigns | India</title>
+    <meta name="description"
+        content="Devigns delivers world-class web design, UI/UX, branding, and eCommerce development with a focus on creativity, premium aesthetics, and high performance. We craft SEO-friendly, conversion-driven websites that help brands grow globally.">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=person" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Smooth scrollbar library -->
+    <script src="https://unpkg.com/smooth-scrollbar/dist/smooth-scrollbar.js"></script>
+
+
+
+    <link rel="canonical" href="https://www.devigns.in/services.html">
+    <link rel="apple-touch-icon" sizes="144x144" href="./Assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon-16x16.png">
+
+    <!-- Open Graph tags for social media sharing -->
+    <meta property="og:title"
+        content="Devigns Services - Web Design, UI/UX, Graphic Design, eCommerce & Branding Experts">
+    <meta property="og:description"
+        content="We design websites, UI/UX, eCommerce platforms, and brand identities that look great and work even better. From Bharat to the world, we bring culture and creativity into every project.">
+    <meta property="og:image" content="https://www.devigns.in/Assets/ogImage.png">
+    <meta property="og:url" content="https://www.devigns.in/services.html">
+
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="menu-modal hidden" id="menu-modal" style="display: none;" data-animation="fadeIn">
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/aboutus.html">ABOUT US</a></li>
+            <li><a href="/blogs.html">BLOGS</a></li>
+            <li><a href="/services.html">SERVICES</a></li>
+            <li><a href="/contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+
+
+
+    <header>
+
+        <nav class="hidden" data-animation="fadeIn">
+            <div class="menu-toggle hidden" id="menu-toggle" data-animation="slideMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/aboutus.html">About us</a></li>
+                <li><a href="/blogs.html">Blogs</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li style="border: none;"><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <a href="/contact.html"><button class="hidden bubble-btn" data-animation="fadeIn">Let's Create ✦<div
+                        class="bubble-overlay"></div>
+                </button></a>
+            <a href="/">
+                <img src="./Assets/headerIcon.png" alt="Devigns Icon" loading="lazy">
+            </a>
+        </div>
+    </header>
+
+
+    <section id="servicesFirst">
+        <h2>AT THE <span class="scribble hidden" data-animation="Aboutunblur">HEART OF EVERYTHING</span> WE DO IS YOU.</h2>
+        <h1>
+            EVERY STORY HAS A SOUL,<br> EVERY IDEA HAS A PURPOSE
+        </h1>
+        <a href="#ListOfServices">
+            <div class="arrow-container">
+                <i class="fa-solid fa-arrow-down arrow"></i>
+            </div>
+        </a>
+        <img src="./Assets/Half-Lotus.svg" alt="Half Lotus" id="Half-Lotus" class="hidden" data-animation="slideTowardsRight" loading="lazy">
+    </section>
+
+
+
+    <section id="ListOfServices">
+        <h2>LIST OF <span class="hidden" data-animation="unblur">Services</span></h2>
+        <div class="services-grid">
+            <div class="service hidden" data-animation="shiftDown">
+                <i class="fas fa-object-group" id="servicesIcons"></i>
+                <p>UI/UX <br>Design</p>
+            </div>
+            <div class="service hidden" data-animation="shiftUp">
+                <i class="fas fa-signature" id="servicesIcons"></i>
+                <p>Logo <br>Design</p>
+            </div>
+            <div class="service hidden" data-animation="shiftDown">
+                <i class="fas fa-paint-brush" id="servicesIcons"></i>
+                <p>Graphic <br>Design</p>
+            </div>
+            <div class="service hidden" data-animation="shiftUp">
+                <i class="fas fa-laptop-code" id="servicesIcons"></i>
+                <p>Website <br>Development</p>
+            </div>
+            <div class="service  hidden" data-animation="shiftDown">
+                <i class="fas fa-bullhorn" id="servicesIcons"></i>
+                <p>Complete <br>Branding</p>
+            </div>
+            <div class="service  hidden" data-animation="shiftUp">
+                <i class="fab fa-shopify" id="servicesIcons"></i>
+                <p>Shopify <br>Store</p>
+            </div>
+            <div class="service hidden" data-animation="shiftDown">
+                <i class="fab fa-wordpress" id="servicesIcons"></i>
+                <p>WordPress <br>Website</p>
+            </div>
+
+            <div class="service  hidden" data-animation="shiftUp">
+                <i class="fas fa-search-dollar" id="servicesIcons"></i>
+                <p>SEO-Friendly <br>Websites</p>
+            </div>
+            <div class="service  hidden" data-animation="shiftDown">
+                <i class="fas fa-life-ring" id="servicesIcons"></i>
+                <p>Ongoing <br>Support</p>
+            </div>
+            <div class="service hidden" data-animation="shiftUp" >
+                <i class="fas fa-redo" id="servicesIcons"></i>
+                <p>Website <br>Redesign</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="servicesSecond">
+
+        <h2>OUR PACKAGES<span style="margin-top: 1.5rem;">Whether you need just design, a full development solution, or both, we have the perfect option to help
+            grow your business. Devigns offers three flexible packages tailored to your needs:</span>
+
+            <div class="package-buttons-layout">
+                  <a href="#DevignsDesignPackage" class="package-button" id="package-designs" data-text="DESIGNS">
+                    <span class="actual-text" style="font-weight: 650;">&nbsp;DESIGNS&nbsp;</span>
+                    <span aria-hidden="true" class="hover-text" style="font-weight: 650;">&nbsp;DESIGNS&nbsp;</span>
+                  </a>
+                  <a href="#DevignsDevelopmentPackage" class="package-button" id="package-development" data-text="DEVELOPMENT">
+                    <span class="actual-text" style="font-weight: 650;">&nbsp;DEVELOPMENT&nbsp;</span>
+                    <span aria-hidden="true" class="hover-text" style="font-weight: 650;">&nbsp;DEVELOPMENT&nbsp;</span>
+                  </a>
+                  <a href="#DevignsSpecialPackage" class="package-button special" id="package-devigns-special" data-text="DEVIGNS SPECIAL">
+                    <span class="actual-text" style="font-weight: 650;">&nbsp;DEVIGNS SPECIAL&nbsp;</span>
+                    <span aria-hidden="true" class="hover-text" style="font-weight: 650;">&nbsp;DEVIGNS SPECIAL&nbsp;</span>
+                  </a>
+                
+              </div>
+              
+              
+            <span id="Additionally" class="hidden" data-animation="slideTowardsRight">Additionally, if you're looking for individual services instead of a
+                complete package, Simply fill out our <a href="/contact.html" target="_blank">Contact us</a> form -
+                there, you can select one or more specific services based on your needs.
+                Choose the one that suits you best:</span>
+        </h2>
+
+
+    </section>
+
+    <section id="DevignsSpecialPackage">
+        <h2><span class="hidden" data-animation="unblur">Devigns</span> OUR SPECIAL PACKAGE</h2>
+        <div class="outer-rounded hidden" data-animation="slideTowardsLeft">
+            <div class="packageDescription">This package combines design and development - perfect for clients
+                who
+                want a complete solution. We bring together creativity and functionality to deliver a great
+                experience.</div>
+            <div class="inner-rounded">
+                <div class="aboutPackage">
+
+                    <div class="packageIncludes">
+                        <span style="text-decoration: underline;">Includes:</span>
+                        <ul>
+                            <li><strong>All Digital Assets:</strong> <br>Our creative team of designers will design all
+                                necessary digital
+                                assets, including logos, graphics, and promotional materials. This ensures your brand
+                                has a
+                                cohesive look across all platforms.</li>
+                            <li><strong>Everything in the Design Package:</strong> <br>This includes all the features
+                                offered in the Design Package, providing you with a solid foundation of design work
+                                before we move into development.
+
+                            </li>
+                            <li><strong>Front-End Development:</strong> <br>
+                                Our developers will take the approved designs and turn them into a fully functional
+                                website or application. This process ensures that users can easily interact with your
+                                site or app just as you envisioned it.
+
+                            </li>
+                            <li><strong>Integration with CMS:
+                                </strong> <br>
+                                We will set up and integrate a content management system (CMS), allowing you to easily
+                                update and manage your website's content without needing technical skills. This gives
+                                you control over your site's information.
+                            </li>
+                            <li><strong>Basic SEO optimization:
+                                </strong> <br>
+                                We implement basic search engine optimization (SEO) techniques to help improve your
+                                site's visibility on search engines like Google.
+                            </li>
+                            <li><strong> Ongoing Support (T&Cs applied):
+                                </strong> <br>
+
+                                We offer ongoing support to address any issues or questions that may arise after the
+                                project is completed. Terms and conditions apply to the scope and duration of this
+                                support.
+                            </li>
+                            <li><strong> Website Redesign:
+                                </strong> <br>
+
+                                If you have an existing website that needs a refresh, we can redesign it to improve its
+                                look and functionality. This may include updating the layout, enhancing user experience,
+                                and incorporating modern design trends.
+                            </li>
+                            <li><strong> User Testing and Feedback Implementation:
+
+                                </strong> <br>
+
+                                We conduct user testing sessions to gather feedback from real users. This feedback is
+                                then used to make improvements, ensuring that your website or app meets the needs and
+                                expectations of your target audience.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="buttonWrapper">
+                <a href="/contact.html">
+                    <button class="hidden bubble-btn" data-animation="fadeIn">
+                        Let's discuss ╰┈➤
+                        <div class="bubble-overlay"></div>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section id="DevignsDesignPackage">
+        <h2>DESIGNS PACKAGE</h2>
+        <div class="outer-rounded hidden" data-animation="slideTowardsRight">
+            <div class="packageDescription">Choose our Design Package to give your brand creative, high-quality
+                designs. This is perfect for those who want stunning visuals without the development work.
+            </div>
+            <div class="inner-rounded">
+                <div class="aboutPackage">
+
+                    <div class="packageIncludes">
+                        <span style="text-decoration: underline;">Includes:</span>
+                        <ul>
+                            <li><strong>Custom UI/UX Design:</strong> <br>Our designers create unique user interface
+                                (UI)
+                                and user experience (UX) designs tailored specifically to your brand. This ensures that
+                                your
+                                website or app is visually appealing and easy to navigate for your users.
+
+                            </li>
+                            <li><strong>Branding Elements:
+                                </strong> <br>We develop essential branding elements such as logos, color schemes, and
+                                typography. These elements help establish your brand's identity and make it easily
+                                recognizable to your audience.
+
+
+
+                            </li>
+                            <li><strong>Design Mockups and Prototypes:
+                                </strong> <br>
+                                We provide visual previews of your design in the form of mockups and interactive
+                                prototypes.
+                                This allows you to see how your website or app will look and function before the actual
+                                development begins.
+
+
+                            </li>
+                            <li><strong>Responsive Design:
+
+                                </strong> <br>
+                                Our designs are created to be responsive, meaning they will automatically adjust to look
+                                great on any device, whether it's a smartphone, tablet, or desktop computer. This
+                                ensures a
+                                seamless user experience across all platforms.
+
+                            </li>
+                            <li><strong>Revision Rounds:
+
+                                </strong> <br>
+                                We offer several rounds of revisions, giving you the opportunity to provide feedback and
+                                request changes. Our goal is to ensure you are completely satisfied with the final
+                                design.
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="buttonWrapper">
+                <a href="/contact.html">
+                    <button class="hidden bubble-btn" data-animation="fadeIn">
+                        Let's discuss ╰┈➤
+                        <div class="bubble-overlay"></div>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="DevignsDevelopmentPackage">
+        <h2>DEVELOPMENT PACKAGE</h2>
+
+        <div class="outer-rounded hidden" data-animation="slideTowardsLeft">
+            <div class="packageDescription">If you already have a design, we'll turn it into a fully functional
+                website or app. Our development services ensure your platform is fast, secure, and scalable.
+
+            </div>
+            <div class="inner-rounded">
+                <div class="aboutPackage">
+
+                    <div class="packageIncludes">
+                        <span style="text-decoration: underline;">Includes:</span>
+                        <ul>
+                            <li><strong>Front-End and Back-End Development:
+                                </strong> <br>Our developers handle both the visual aspects of your site (what users
+                                see)
+                                and the behind-the-scenes functions that make it work. This ensures a comprehensive and
+                                seamless development process.
+
+                            </li>
+                            <li><strong>Database Integration:
+
+                                </strong> <br>We integrate a database to manage your site's data securely and
+                                efficiently.
+                                This allows for smooth data storage, retrieval, and management, which is crucial for
+                                dynamic
+                                websites.
+
+
+
+
+
+                            </li>
+                            <li><strong>Security Implementation:
+
+                                </strong> <br>
+                                We implement security measures to protect your website from threats such as hacking and
+                                data
+                                breaches. This includes securing user data and ensuring safe transactions for e-commerce
+                                sites.
+
+
+
+                            </li>
+                            <li><strong>Performance Optimization:
+
+
+                                </strong> <br>
+                                Our team optimizes your website or app to ensure fast loading times and smooth
+                                operation.
+                                This includes techniques to enhance user experience.
+
+
+                            </li>
+                            <li><strong>Ongoing Support and Maintenance Options (T&Cs applied):
+
+
+                                </strong> <br>
+                                We offer options for ongoing support and maintenance to keep your site running smoothly
+                                over
+                                time. This can include regular updates, security checks, and troubleshooting assistance.
+
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="buttonWrapper">
+                <a href="/contact.html">
+                    <button class="hidden bubble-btn" data-animation="fadeIn">
+                        Let's discuss ╰┈➤
+                        <div class="bubble-overlay"></div>
+                    </button>
+                </a>
+            </div>
+
+        </div>
+        <p id="notSureline" class="hidden" data-animation="slideTowardsRight">💡 Not sure which package suits your needs? <a href="/contact.html" id="gitText">Get in
+                touch</a> with us, and we'll help you choose the best option!</p>
+    </section>
+
+
+    <div id="CallCTA">
+        <h3>Let's discuss your project now </h3>
+        <a href="https://calendar.app.google/jDdctkjgYEiFd8bp7" target="_blank">SCHEDULE A FREE VIDEO CALL <i
+                class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="tel:+918329860385">
+            <i class="fas fa-phone"></i> CALL US
+        </a>
+    </div>
+
+    <section class="testimonial-section">
+        <h2>HEAR FROM <span>OUR CLIENTS!</span></h2>
+        <p class="hidden" data-animation="slideTowardsRight">Your Story could be the next...</p>
+        <div class="marquee-wrapper" id="testimonialWrapper">
+            <div class="marquee" id="testimonialMarquee">
+                <div class="testimonial-card">
+                    <p>Thankful to Devigns for their support and dedication. They understood our needs and delivered a platform that truly reflects our values with professionalism and care.</p>
+                    <div class="author">- Adv. Hanumant Singh</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>Working with Devigns was a seamless experience. Their team understood our requirements and
+                        delivered a website that truly resonates with our audience.
+                    </p>
+                    <div class="author">- Rohit Singh</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>The creativity and professionalism exhibited by Devigns exceeded our expectations. Our new
+                        branding has received fantastic feedback from our clients.</p>
+                    <div class="author">- Karan Verma</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>From the initial consultation to the final delivery, Devigns showcased exceptional skill and
+                        dedication. Our e-commerce platform is now more user-friendly and visually appealing.</p>
+                    <div class="author">- Sneha Shinde</div>
+                </div>
+
+                <!-- Duplicated cards for seamless scrolling -->
+               
+            </div>
+        </div>
+    </section>
+
+
+    <section id="footerUpperHalf" data-scroll-section>
+
+        <div class="ocean">
+            <div class="wave"></div>
+        </div>
+
+        <div id="bigCircle">
+            <div id="smallCircle">
+                <p>Designed & Developed by</p>
+                <img src="./Assets/FooterLogo.png" alt="Devigns Official Logo"
+                    style="mix-blend-mode: multiply;width: 90%;" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section id="footerLowerHalf" data-scroll-section>
+        <h3>From <span id="Bharat" title="India">भारत</span> to the World.</h3>
+        <div class="heading-container">
+            <h1 class="DevignsInBG">DEVIGNS</h1>
+            <h2>A Call From Your Roots</h2>
+        </div>
+
+        <div class="social-bar"
+            onclick="window.open('https://mail.google.com/mail/?view=cm&to=devignsofficial@gmail.com', '_blank')">
+            Let's Work Together! Drop us a mail.
+            <div class="icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+        </div>
+        <p>Will you pick it?</p>
+        <div class="callWhatsapp">
+            <a href="tel:+918329860385">
+                <i class="fas fa-phone" style="font-size: 2.3rem;"></i>
+            </a>
+
+            <a
+                href="https://wa.me/+918329860385?text=Hey!%20I%20just%20came%20across%20Devigns%20and%20love%20your%20work.%20I%E2%80%99m%20looking%20for%20Design%20%26%20Development%20services%20and%20would%20love%20to%20discuss%20how%20you%20can%20help!">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <div id="location">
+            <h5>Powered from Mumbai</h5>
+            <img src="./Assets/Vitthal.svg" alt="Lord Vitthal" loading="lazy">
+        </div>
+
+
+    </section>
+
+
+    <footer>
+        <p><span style="font-family: 'Amsterdam Three';" id="company" class="hidden"
+                data-animation="unblur">Devigns</span> &copy;<span id="year"></span>.
+            All rights
+            reserved.</p>
+        <p id="legal">
+            <a href="/terms-and-conditions.html" target="_blank">Terms & Conditions </a> |
+            <a href="/privacy-policy.html" target="_blank">Privacy Policy</a>
+        </p>
+
+    </footer>
+    <script defer src="script.js"></script>
+    <script>
+        const marquee = document.querySelector('.marquee');
+        const cards = document.querySelectorAll('.testimonial-card');
+
+        // Pause only when hovering a card
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                marquee.style.animationPlayState = 'paused';
+            });
+            card.addEventListener('mouseleave', () => {
+                marquee.style.animationPlayState = 'running';
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>

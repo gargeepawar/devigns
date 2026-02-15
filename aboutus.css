@@ -1,0 +1,1061 @@
+#AboutFirst {
+    flex-direction: column;
+    padding: 8rem;
+    gap: 2rem;
+}
+
+#AboutFirst h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25rem;
+    color: #e382854f;
+    font-weight: 700;
+    white-space: nowrap;
+    position: relative;
+    line-height: 1;
+    pointer-events: none;
+    padding-top: 3rem;
+    /* border-bottom: 1rem solid #d62435; */
+}
+
+
+
+#AboutFirst h1 p {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Amsterdam Three';
+    color: #000000;
+    font-weight: 550;
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+#AboutRLotus {
+    height: 40%;
+    position: absolute;
+    right: 0;
+    bottom: -5rem;
+    z-index: -1;
+    pointer-events: none;
+
+}
+
+#Pcontainer {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4b3314;
+    margin: 0 auto;
+    padding-right: 2rem;
+}
+
+#Pcontainer li:first-child {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  #Pcontainer li:not(:first-child) {
+    margin-left: 1rem;
+  }
+
+#DesDev {
+    position: relative;
+    text-align: right;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 750;
+    list-style: none;
+}
+
+
+#SignSpanWithHeart {
+    position: absolute;
+    top: 80%;
+    right: 0%;
+    transform: translate(-80%, -20%);
+    display: flex;
+    align-items: center;
+}
+
+
+#SignSpan {
+    font-family: 'Amsterdam Three';
+    font-weight: 550;
+    color: black;
+    font-size: 3.5rem;
+}
+
+
+
+#AboutSecond {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#AboutSecond h2 {
+    font-size: 9rem;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 1.1;
+    text-align: center;
+    width: 90%;
+}
+
+#AboutSecond h4 {
+    font-size: 5rem;
+    font-weight: 550;
+    font-family: 'Poppins';
+}
+
+#AboutSecond h4 span {
+    font-family: 'Amsterdam Three';
+    color: #be3946;
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+    font-size: larger;
+}
+
+
+
+#StepsContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    overflow-x: auto;
+    /* Allows horizontal scrolling */
+    padding-bottom: 1rem;
+    /* Prevents cutting off content */
+    scrollbar-width: thin;
+    /* Customizes the scrollbar */
+    scrollbar-color: #be3946 transparent;
+    flex-direction: row;
+    margin-top: 5rem;
+    padding: 0 4rem;
+}
+
+/* For Chrome, Edge, Safari */
+#StepsContainer::-webkit-scrollbar {
+    height: 8px;
+}
+
+#StepsContainer::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#StepsContainer::-webkit-scrollbar-thumb {
+    background-color: #be3946 !important;
+    border-radius: 10px;
+}
+
+#StepsContainer::-webkit-scrollbar-thumb:hover {
+    background-color: #d82133 !important;
+}
+
+.step {
+    flex: 0 0 auto;
+    /* Prevents steps from shrinking or growing */
+    min-width: 250px;
+    /* Ensures steps have a minimum width */
+    max-width: 350px;
+    /* Optional: limit the maximum size */
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    margin-bottom: 2rem;
+}
+
+.step h3 {
+    text-align: center;
+
+}
+
+.step .circle {
+    background-color: #d62435;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    font-weight: bold;
+    font-size: 3rem;
+    transition: all 0.3s ease-in;
+    margin: 0 auto;
+}
+
+
+
+.step h3 {
+    font-size: 2.8rem;
+    font-weight: 600;
+
+}
+
+.step .stepDesc {
+    font-size: 1.7rem;
+    line-height: 1.5;
+    color: #4b3314;
+    font-weight: 550;
+    margin-top: .5rem;
+}
+
+.step .stepDesc a {
+    color: inherit;
+    transition: all 0.3s ease-in;
+}
+
+.step .stepDesc a:hover {
+    text-decoration: underline;
+
+}
+
+
+
+
+
+
+
+#BigLContainer {
+    width: 70%;
+    height: 40rem;
+    background-color: rgba(190, 57, 70, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden;
+
+}
+
+#BigL {
+    width: 90%;
+    pointer-events: none;
+
+}
+
+#AboutThird {
+
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#AboutThird h2 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+#AboutThird h2 span {
+    font-family: 'Amsterdam Three';
+    font-weight: 550;
+}
+
+#AboutThird a {
+    margin: 4rem 0;
+}
+
+#AboutFourth {
+    flex-direction: column;
+    gap: 5rem;
+}
+
+#AboutFourth h2 {
+    font-size: 8rem;
+    line-height: 1.2;
+    text-align: center;
+    width: 75%;
+}
+
+#AboutFourth h2 span {
+    font-family: 'Amsterdam Three';
+    font-weight: 550;
+    color: #be3946;
+}
+
+#FormulaGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    /* no gap, we'll control borders */
+    width: 80%;
+    margin: 0 auto;
+    /* center it horizontally */
+}
+
+.Formula {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Create middle border on desktop */
+#FormulaGrid>.Formula:nth-child(odd) {
+    border-right: 4px solid #be3946;
+}
+
+/* Inner structure */
+.FormulaInner {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.FormulaHeader {
+    flex: 0 0 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.FormulaInner p {
+    flex: 1;
+    font-size: 1.8rem;
+    font-weight: 550;
+}
+
+h4 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
+i {
+    font-size: 5rem;
+}
+
+
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    #AboutFirst h1 {
+        font-size: 20rem;
+    }
+
+    #AboutFirst h1 p {
+        bottom: 10%;
+        font-size: 3.5rem;
+    }
+
+    #AboutRLotus {
+        height: 33%;
+        right: -5rem;
+    }
+
+    #Pcontainer {
+        width: 90%;
+    }
+
+    #AboutSecond {
+        gap: 4rem;
+    }
+
+    #StepsContainer {
+        margin-top: 2rem;
+        padding: 0 4rem;
+    }
+
+    #AboutThird h2 {
+        font-size: 4.5rem;
+    }
+
+    #BigLContainer {
+        height: 33rem;
+    }
+
+    #AboutThird a {
+        margin: 2rem 0;
+    }
+
+    #AboutFourth h2 {
+        font-size: 6rem;
+    }
+
+    #FormulaGrid {
+        padding: 0 2rem;
+        width: 100%;
+
+    }
+
+    .FormulaInner {
+
+        gap: 1rem;
+    }
+
+    .Formula {
+        padding: 1.2rem;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #AboutFirst {
+        padding: 8rem 6rem;
+    }
+
+    #AboutFirst h1 {
+        font-size: 15rem;
+    }
+
+    #AboutFirst h1 p {
+        bottom: 10%;
+        font-size: 3rem;
+    }
+
+    #AboutRLotus {
+        height: 27%;
+        right: -5rem;
+    }
+
+    #Pcontainer {
+        width: 95%;
+        font-size: 1.8rem;
+    }
+
+    #SignSpanWithHeart {
+        top: 80%;
+        right: 3%;
+        transform: translate(-80%, -20%);
+    }
+
+
+    #SignSpan {
+        font-size: 3.2rem;
+    }
+
+    #AboutSecond {
+        gap: 2.5rem;
+    }
+
+    #AboutSecond h2 {
+        font-size: 7rem;
+    }
+
+    #AboutSecond h4 {
+        font-size: 3.7rem;
+    }
+
+    #StepsContainer {
+        margin-top: 2rem;
+        padding: 0 4rem;
+    }
+
+    .step .circle {
+        height: 4rem;
+        width: 4rem;
+        font-size: 2.8rem;
+    }
+
+    .step h3 {
+        font-size: 2.6rem;
+    }
+
+    .step {
+        flex: 0 0 auto;
+        min-width: 150px;
+        max-width: 320px;
+    }
+
+    #BigLContainer {
+        height: 27rem;
+    }
+
+    #AboutThird {
+        min-height: unset;
+        height: auto;
+        padding: 3rem 0;
+    }
+
+    #AboutThird h2 {
+        font-size: 4.5rem;
+    }
+
+    #AboutThird a {
+        margin: 3rem 0;
+    }
+
+    #AboutFourth {
+        gap: 3rem;
+    }
+
+    #AboutFourth h2 {
+        font-size: 5rem;
+    }
+
+    #FormulaGrid {
+        padding: 0 1rem;
+        width: 100%;
+    }
+
+
+    .FormulaInner {
+
+        gap: .5rem;
+    }
+
+    .Formula {
+        padding: 1rem;
+    }
+
+
+    .FormulaHeader {
+        flex: 0 0 100px;
+    }
+
+    h4 {
+        font-size: 1.7rem;
+
+    }
+
+    i {
+        font-size: 3.7rem;
+    }
+
+}
+
+
+@media (min-width: 640px) and (max-width: 767px) {
+    #AboutFirst {
+        padding: 8rem 2rem;
+        gap: 1rem;
+    }
+
+    #AboutFirst h1 {
+        font-size: 12rem;
+    }
+
+    #AboutFirst h1 p {
+        bottom: 10%;
+        font-size: 2.5rem;
+    }
+
+    #AboutRLotus {
+        height: 25%;
+        right: -7rem;
+    }
+
+    #Pcontainer {
+        width: 90%;
+        font-size: 1.7rem;
+    }
+
+    #SignSpanWithHeart {
+        top: 80%;
+        right: 3%;
+        transform: translate(-80%, -20%);
+    }
+
+
+    #SignSpan {
+        font-size: 3.2rem;
+    }
+
+    #AboutSecond {
+        gap: 2.5rem;
+    }
+
+    #AboutSecond h2 {
+        font-size: 5.7rem;
+    }
+
+    #AboutSecond h4 {
+        font-size: 3.3rem;
+    }
+
+    #StepsContainer {
+        margin-top: 2rem;
+        padding: 0 4rem;
+        width: 100%;
+    }
+
+    .step .circle {
+        height: 4rem;
+        width: 4rem;
+        font-size: 2.8rem;
+    }
+
+    .step h3 {
+        font-size: 2.6rem;
+    }
+
+    .step {
+        flex: 0 0 auto;
+        min-width: 200px;
+        max-width: 350px;
+    }
+
+    #BigLContainer {
+        height: 20rem;
+    }
+
+    #AboutThird {
+        min-height: unset;
+        height: auto;
+        padding: 3rem 0;
+    }
+
+    #AboutThird h2 {
+        font-size: 4.5rem;
+    }
+
+    #AboutThird a {
+        margin: 3rem 0;
+    }
+
+    #AboutFourth {
+        gap: 3rem;
+        padding: 3rem 0;
+    }
+
+    #AboutFourth h2 {
+        font-size: 5rem;
+    }
+
+    #FormulaGrid {
+        padding: 0 1rem;
+        width: 100%;
+    }
+
+
+    .FormulaInner {
+
+        gap: .5rem;
+    }
+
+    .Formula {
+        padding: 1rem;
+    }
+
+
+    .FormulaHeader {
+        flex: 0 0 100px;
+    }
+
+    h4 {
+        font-size: 1.7rem;
+
+    }
+
+    i {
+        font-size: 3.7rem;
+    }
+
+}
+
+
+
+@media (min-width: 480px) and (max-width: 639px) {
+    #AboutFirst {
+        padding: 8rem 2rem;
+        gap: 1rem;
+    }
+
+    #AboutFirst h1 {
+        font-size: 9rem;
+    }
+
+    #AboutFirst h1 p {
+        bottom: 10%;
+        font-size: 1.8rem;
+    }
+
+    #AboutRLotus {
+        display: none;
+    }
+
+    #Pcontainer {
+        width: 90%;
+        font-size: 1.3rem;
+        padding-right: 0;
+    }
+
+    #DesDev {
+        font-size: 1.3rem;
+    }
+
+    #SignSpanWithHeart {
+        top: 90%;
+        right: 3%;
+        transform: translate(-80%, -20%);
+    }
+
+
+    #SignSpan {
+        font-size: 2.8rem;
+    }
+
+    #AboutSecond {
+        gap: 2.5rem;
+        min-height: unset;
+        height: auto;
+        padding: 3rem 0;
+    }
+
+    #AboutSecond h2 {
+        font-size: 5rem;
+    }
+
+    #AboutSecond h4 {
+        font-size: 3rem;
+    }
+
+    #StepsContainer {
+        margin-top: 2rem;
+        padding: 0 4rem;
+        width: 100%;
+    }
+
+    .step .stepDesc {
+        font-size: 1.5rem;
+    }
+
+    .step .circle {
+        height: 4rem;
+        width: 4rem;
+        font-size: 2.8rem;
+    }
+
+    .step h3 {
+        font-size: 2.6rem;
+    }
+
+    .step {
+        flex: 0 0 auto;
+        min-width: 100%;
+        max-width: 350px;
+    }
+
+    #BigLContainer {
+        height: 16rem;
+        width: 90%;
+    }
+
+    #AboutThird {
+        min-height: unset;
+        height: auto;
+        padding: 3rem 0;
+    }
+
+    #AboutThird h2 {
+        font-size: 3.7rem;
+    }
+
+    #AboutThird a {
+        margin: 1.5rem 0;
+    }
+
+    #AboutFourth {
+        gap: 3rem;
+        padding: 3rem 0;
+    }
+
+    #AboutFourth h2 {
+        font-size: 3.5rem;
+    }
+
+    #FormulaGrid {
+        padding: 0 1rem;
+        width: 100%;
+    }
+
+
+    .FormulaInner {
+        gap: .5rem;
+    }
+
+    .FormulaInner p {
+        font-size: 1.5rem;
+    }
+
+    .Formula {
+        padding: 1rem;
+    }
+
+
+    .FormulaHeader {
+        flex: 0 0 100px;
+    }
+
+    h4 {
+        font-size: 1.7rem;
+
+    }
+
+    i {
+        font-size: 3.7rem;
+    }
+
+}
+
+@media screen and (max-width: 479px) {
+    #AboutFirst {
+        padding: 8rem 1.8rem;
+        gap: 1rem;
+    }
+
+    #AboutFirst h1 {
+        font-size: 6.8rem;
+        padding-top: 5rem;
+    }
+
+    #AboutFirst h1 p {
+        bottom: 10%;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    #AboutRLotus {
+        display: none;
+    }
+
+    #Pcontainer {
+        width: 90%;
+        font-size: 1.3rem;
+        padding-right: 0;
+    }
+
+    #DesDev {
+        font-size: 1.3rem;
+    }
+
+    #SignSpanWithHeart {
+        top: 90%;
+        right: 3%;
+        transform: translate(-80%, -20%);
+    }
+
+
+    #SignSpan {
+        font-size: 2.8rem;
+    }
+
+    #AboutSecond {
+        gap: 0rem;
+        min-height: unset;
+        height: auto;
+        padding: 3rem 0;
+    }
+
+    #AboutSecond h2 {
+        font-size: 4rem;
+    }
+
+    #AboutSecond h4 {
+        font-size: 2.7rem;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    #StepsContainer {
+        margin-top: 2rem;
+        padding: 0 2rem;
+        width: 100%;
+    }
+
+    .step .stepDesc {
+        font-size: 1.5rem;
+    }
+
+    .step .circle {
+        height: 4rem;
+        width: 4rem;
+        font-size: 2.8rem;
+    }
+
+    .step h3 {
+        font-size: 2.6rem;
+    }
+
+    .step {
+        flex: 0 0 auto;
+        min-width: 100%;
+        max-width: 300px;
+    }
+
+    #BigLContainer {
+        height: 14rem;
+        width: 90%;
+    }
+
+    #AboutThird {
+        min-height: unset;
+        height: auto;
+        padding: 7rem 0;
+    }
+
+    #AboutThird h2 {
+        font-size: 3rem;
+        padding: 0 .7rem;
+    }
+
+    #AboutThird a {
+        margin: 2rem 0;
+    }
+
+    #AboutFourth {
+        gap: 1rem;
+        padding: 1.5rem 0;
+    }
+
+    #AboutFourth h2 {
+        font-size: 3rem;
+        width: 85%;
+    }
+
+    #FormulaGrid {
+        padding: 0 1rem;
+        width: 100%;
+    }
+
+
+    .FormulaInner {
+        gap: .5rem;
+    }
+
+    .FormulaInner p {
+        font-size: 1.5rem;
+    }
+
+    .Formula {
+        padding: 1rem;
+            margin: 0 !important;
+    }
+
+
+    .FormulaHeader {
+        flex: 0 0 100px;
+    }
+
+    h4 {
+        font-size: 1.7rem;
+
+    }
+
+    i {
+        font-size: 3.7rem;
+    }
+
+}
+
+
+@media screen and (max-width: 360px) {
+
+    #AboutFirst h1 {
+        font-size: 6rem;
+    }
+
+
+    #AboutFirst h1 p {
+        font-size: 1.2rem;
+    }
+
+    #Pcontainer {
+        font-weight: 550;
+    }
+
+    #DesDev {
+        font-size: 1rem;
+    }
+
+    #SignSpan {
+        font-size: 2.3rem;
+    }
+
+    #SignSpanWithHeart {
+        top: 2rem;
+        right: 2%;
+        transform: translate(-80%, -20%);
+    }
+
+
+
+    .step {
+        flex: 0 0 auto;
+        max-width: 100%;
+
+    }
+
+
+    #AboutThird h2 {
+        font-size: 2.6rem;
+    }
+
+    #BigLContainer {
+        height: 12rem;
+    }
+
+    #AboutThird {
+        padding: 5rem 0;
+    }
+    .Formula{
+        margin: 0 !important;
+    }
+
+}
+
+
+@media screen and (max-width: 300px) {
+    #AboutFirst h1 {
+    white-space: wrap;
+    text-align: center;
+    line-height: 0.9;
+    margin-bottom: 2rem;
+    }
+
+    #AboutFirst h1 p {
+        bottom: -15%;
+    }
+}
+
+
+
+
+/* ✅ Responsive for mobile */
+@media (max-width: 767px) {
+    #FormulaGrid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Remove right border on mobile */
+    #FormulaGrid>.Formula:nth-child(odd) {
+        border-right: none;
+    }
+
+    /* Add top border to all except the first one */
+    #FormulaGrid>.Formula {
+        border-top: 2px solid #be3946;
+    }
+
+    #FormulaGrid>.Formula:first-child {
+        border-top: none;
+    }
+
+    .FormulaInner {
+        flex-direction: row;
+        /* Keep header and text side by side */
+        align-items: center;
+    }
+
+    .FormulaHeader {
+        flex: 0 0 100px;
+    }
+
+    .Formula {
+        margin: 0 2rem;
+    }
+}

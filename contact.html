@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sameer Singh, Gargee Pawar">
+    <title>Contact Devigns | Web Design, UI/UX, Branding & Development Services</title>
+
+    <meta name="description"
+        content="Reach out to Devigns, a trusted design and development agency in India. We offer UI/UX design, branding, eCommerce development, and custom websites for businesses of all sizes. Let's discuss your project today!">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="collapsibleFAQ.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=person" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Smooth scrollbar library -->
+    <script src="https://unpkg.com/smooth-scrollbar/dist/smooth-scrollbar.js"></script>
+
+
+
+
+    <link rel="canonical" href="https://www.devigns.in/contact.html">
+    <link rel="apple-touch-icon" sizes="144x144" href="./Assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon-16x16.png">
+
+    <!-- Open Graph tags for social media sharing -->
+    <meta property="og:title" content="Let's Work Together | Contact Devigns">
+    <meta property="og:description"
+        content="Got an idea? Need a brand refresh? Let's talk! We're here to bring your vision to life with world-class design and development.">
+    <meta property="og:image" content="https://www.devigns.in/Assets/ogImage.png">
+    <meta property="og:url" content="https://www.devigns.in/contact.html">
+
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+  <!-- Modal -->
+  <div class="menu-modal hidden" id="menu-modal" style="display: none;" data-animation="fadeIn">
+    <ul>
+        <li><a href="/">HOME</a></li>
+        <li><a href="/aboutus.html">ABOUT US</a></li>
+        <li><a href="/blogs.html">BLOGS</a></li>
+        <li><a href="/services.html">SERVICES</a></li>
+        <li><a href="/contact.html">CONTACT</a></li>
+    </ul>
+</div>
+
+
+
+
+<header>
+
+    <nav class="hidden" data-animation="fadeIn">
+        <div class="menu-toggle hidden" id="menu-toggle" data-animation="slideMenu">
+            <i class="fas fa-bars"></i>
+        </div>
+            <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/aboutus.html">About us</a></li>
+        <li><a href="/blogs.html">Blogs</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li style="border: none;"><a href="/contact.html">Contact</a></li>
+    </ul>
+    </nav>
+
+    <div class="header-right">
+        <a href="/contact.html"><button class="hidden bubble-btn" data-animation="fadeIn">Let's Create ✦<div class="bubble-overlay"></div>
+        </button></a>
+        <a href="/">
+            <img src="./Assets/headerIcon.png" alt="Devigns Icon" loading="lazy">
+          </a>
+    </div>
+</header>
+
+    <section id="contactFirst">
+        <h1>
+            Let's Create <br><span class="hidden" data-animation="unblur">Magic</span>Together!
+        </h1>
+
+        <div>
+
+            <p>Great ideas deserve <strong>powerful execution, a visionary team, and creative minds.</strong> Share your
+                vision with us, and
+                we'll transform it into something bold, beautiful, and unforgettable!</p>
+
+            <a href="#contactSecond">
+                <div class="arrow-container">
+                    <i class="fa-solid fa-arrow-down arrow"></i>
+                </div>
+            </a>
+        </div>
+
+        <img src="./Assets/Half-Lotus.svg" alt="Half Lotus" id="Half-Lotus" class="hidden" data-animation="slideTowardsRight" loading="lazy">
+
+    </section>
+
+    <div id="contactSections">
+
+        <section id="contactSecond">
+
+            <div>
+                <h2><i class="fa-solid fa-user"></i>
+                    First, we'd love to know <span>you.</span></h2>
+                <form id="contactFormFirst">
+                    <div class="input-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="How should we address you?" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Where can we share our creative insights?" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="phone">Phone (without country code):</label>
+                        <input type="tel" id="phone" placeholder="For a quick chat" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="country">Country:</label>
+                        <input type="text" id="country" placeholder="Where are you from?" autocomplete="off" required>
+                        <div id="countrySuggestions" class="suggestions"></div>
+
+                    </div>
+
+                    <div class="down-arrow-container next" id="next1">
+                        <i class="fa-solid fa-arrow-right downArrow"></i>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <section id="contactThird">
+            <div>
+                <h2><i class="fa-solid fa-info-circle"></i> How Can We Help <span>You?</span></h2>
+                <form id="contactFormSecond">
+
+                    <!-- Text Area for User Needs -->
+                    <div class="input-group">
+                        <label for="needs">Tell Us What You Need:</label>
+                        <textarea id="needs" placeholder="(Got ideas? Inspirations? Drop them here - we love details!)"
+                            required></textarea>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <label>Choose exactly what you need!</label>
+                        <div class="checkbox-options">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="service" value="logo-design">
+                                <span class="checkmark">Logo Design</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="service" value="ui-ux-design">
+                                <span class="checkmark">UI/UX Design</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="service" value="custom-web-design">
+                                <span class="checkmark">Custom Web Design</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="service" value="business-cards">
+                                <span class="checkmark">Business Cards</span>
+                            </label>
+
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="service" value="graphic-design">
+                                <span class="checkmark">Graphic Design</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="service" value="e-commerce-website">
+                                <span class="checkmark">E-Commerce Website</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="service" value="complete-branding">
+                                <span class="checkmark" style="font-weight: 600;">Complete Branding</span>
+                            </label>
+                            <label class="custom-checkbox" title="Select if you're interested in a package or mix of services. We'll get in touch with details.">
+                                <input type="checkbox" name="service" value="others">
+                                <span class="checkmark" style="font-weight: 600;">Others</span>
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <!-- Navigation Buttons -->
+                    <div class="navigation-buttons">
+                        <div class="down-arrow-container prev">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                        <div class="down-arrow-container next" id="next2">
+                            <i class="fa-solid fa-arrow-right downArrow"></i>
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+        </section>
+
+
+
+        <section id="contactFourth">
+            <div>
+                <h2><i class="fa-solid fa-briefcase"></i> Tell Us About <span>Your Work.</span></h2>
+                <form id="contactFormThird">
+
+
+
+                    <div class="input-group">
+                        <label for="companyname">Company Name:</label>
+                        <input type="text" id="companyname"
+                            placeholder="(Or your personal brand, if you're a solopreneur!)" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="yourwork">What do you do?</label>
+                        <textarea id="yourwork"
+                            placeholder="Share a quick snapshot of your company - your mission, your market!"
+                            required></textarea>
+                    </div>
+
+
+
+                    <!-- Navigation Buttons -->
+                    <div class="navigation-buttons">
+                        <div class="down-arrow-container prev">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                        <div class="down-arrow-container next" id="next3">
+                            <i class="fa-solid fa-arrow-right downArrow"></i>
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+        </section>
+
+
+
+        <section id="contactFifth">
+            <div>
+                <h2><i class="fa-solid fa-handshake"></i> Let's <span>Connect!</span></h2>
+
+                <form id="contactFormFourth">
+
+
+                    <div class="checkbox-group">
+                        <label>What's the best way to reach you?</label>
+                        <div class="checkbox-options">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="contactoptions" value="g-mail">
+                                <span class="checkmark">G-mail</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="contactoptions" value="whatsapp">
+                                <span class="checkmark">WhatsApp</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="contactoptions" value="phone-call">
+                                <span class="checkmark">Phone Call</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="checkbox-group">
+                        <label>How did you hear about us?</label>
+                        <div class="checkbox-options">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="how_found_us" value="social-media">
+                                <span class="checkmark">Social Media</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="how_found_us" value="google">
+                                <span class="checkmark">Google</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="how_found_us" value="referral">
+                                <span class="checkmark">Referral</span>
+                            </label>
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="how_found_us" value="other">
+                                <span class="checkmark">Other</span>
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <!-- Navigation Buttons -->
+                    <div class="navigation-buttons">
+                        <div class="down-arrow-container prev">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                        <div class="down-arrow-container next" id="next4">
+                            <i class="fa-solid fa-arrow-right downArrow"></i>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+
+        <section id="contactSixth">
+            <div>
+                <h2>Hit <span style="font-family: 'Amsterdam Three';font-weight: 550;font-size: 4rem;">Submit</span> &
+                </h2>
+                <h3>WE'RE ALL SET!</h3>
+                    <div class="agreement">
+                        <input type="checkbox" id="agreementCheckbox" required>
+                        <label for="agree">
+                          I agree to the 
+                          <a href="/privacy-policy" target="_blank" style="color: #4B3314; text-decoration: underline;">Privacy Policy</a> 
+                          and 
+                          <a href="/terms" target="_blank" style="color: #4B3314; text-decoration: underline;">Terms & Conditions</a>.
+                        </label>
+                      </div>
+                      
+                      <div class="final-buttons">
+                        <div class="down-arrow-container prev">
+                          <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                        <div class="action-buttons">
+                          <button id="summary" class="bubble-btn next">
+                            Review
+                            <div class="bubble-overlay"></div>
+                          </button>
+                          <button id="submit">SUBMIT</button>
+                        </div>
+                      </div>
+                      
+            </div>
+        </section>
+
+        <section id="contactSummary">
+            <div>
+                <h2>One <span>Last Glance!</span></h2>
+                <span id="note">Review your details below. To make changes, use the Back button to return and edit</span>
+
+                <div id="summarydetails">
+
+                </div>
+
+                <div class="agreement">
+                    <input type="checkbox" id="agreementCheckbox" required>
+                    <label for="agree">
+                      I agree to the 
+                      <a href="/privacy-policy" target="_blank" style="color: #4B3314; text-decoration: underline;">Privacy Policy</a> 
+                      and 
+                      <a href="/terms" target="_blank" style="color: #4B3314; text-decoration: underline;">Terms & Conditions</a>.
+                    </label>
+                  </div>
+                <div class="final-buttons">
+                    <div class="down-arrow-container prev">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <button id="submit">SUBMIT</button>
+                </div>
+            </div>
+        </section>
+        <section id="submitted">
+            <div>
+                <h2>Thank you! <span>We're on it...</span></h2>
+                <p>
+                    Your journey with us has officially begun! We've received your details, and our team is already in
+                    action. We believe in quick responses and getting started ASAP, so expect to hear from us very soon!
+                </p>
+                <p>What's Next? Keep an eye on your inbox or preferred contact method - we'll reach out shortly to
+                    discuss
+                    your needs and move things forward.</p>
+
+                <p style="text-align: center;font-size: 2rem;"><strong>The Divine Creation Begins!</strong></p>
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+
+    <section id="faq" data-scroll-section>
+        <div id="faqbigcontainer">
+            <div class="container">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">How long
+                                does it take to complete a project?
+                            </span> <span class="icon"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>The timeline for project completion varies based on the complexity and requirements. On
+                                average, a standard project takes between 4 to 12 weeks. We prioritize quality and will
+                                provide you with a detailed timeline during our initial consultation.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-2" aria-expanded="false">
+                            <span class="accordion-title">Can you redesign or improve my existing website?
+                            </span>
+                            <span class="icon"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Absolutely! We specialize in redesigning and improving existing websites and apps. Our
+                                team will assess your current setup and recommend enhancements to ensure a fresh, modern
+                                look and improved functionality.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-3" aria-expanded="false">
+                            <span class="accordion-title">Can I request custom features or unique designs?
+                            </span>
+                            <span class="icon"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Of course! At Devigns, we embrace creativity and innovation. If you have special features
+                                or unique designs in mind, just let us know! Our team will work closely with you to
+                                create exactly what you need.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Do you offer
+                                content writing along with design?
+                            </span> <span class="icon"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Yes, we offer content writing services alongside our design solutions. Our skilled
+                                writers can create engaging and SEO-friendly content that aligns with your brand and
+                                enhances your website's visibility.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Do you
+                                provide ongoing support and maintenance after the project is completed?
+                            </span><span class="icon"></span></button>
+                        <div class="accordion-content">
+                            <p>Yes, we offer ongoing support and maintenance packages to ensure your website/app runs
+                                smoothly. Whether you need updates, troubleshooting, or enhancements, we're here to
+                                help! Please note that ongoing support may incur additional charges based on the
+                                services required.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex;justify-content: right;align-items: center;padding: 2rem 1rem;">
+                    <a href="/FAQ.html" id="LearnMoreBtn">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-item">
+                <div class="icon-container">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <span>Mumbai, India</span>
+            </div>
+            <div class="contact-item">
+                <div class="icon-container">
+                    <i class="fa-solid fa-envelope email-icon"></i>
+
+                </div>
+                <span>DevignsOfficial@gmail.com</span>
+            </div>
+            <div class="contact-item">
+                <div class="icon-container">
+                    <i class="fa-solid fa-phone-volume"></i> 
+                </div>
+                <span>+91 83298 60385</span>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section id="footerUpperHalf" data-scroll-section>
+
+        <div class="ocean">
+            <div class="wave"></div>
+        </div>
+
+        <div id="bigCircle">
+            <div id="smallCircle">
+                <p>Designed & Developed by</p>
+                <img src="./Assets/FooterLogo.png" alt="Devigns Official Logo"
+                    style="mix-blend-mode: multiply;width: 90%;" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section id="footerLowerHalf" data-scroll-section>
+        <h3>From <span id="Bharat" title="India">भारत</span> to the World.</h3>
+        <div class="heading-container">
+            <h1 class="DevignsInBG">DEVIGNS</h1>
+            <h2>A Call From Your Roots</h2>
+        </div>
+
+        <div class="social-bar" onclick="window.open('https://mail.google.com/mail/?view=cm&to=devignsofficial@gmail.com', '_blank')">
+            Let's Work Together! Drop us a mail.
+            <div class="icon">
+                    <i class="fas fa-envelope"></i>
+            </div>
+        </div>
+        <p>Will you pick it?</p>
+        <div class="callWhatsapp">
+            <a href="tel:+918329860385">
+                <i class="fas fa-phone" style="font-size: 2.3rem;"></i>
+            </a>
+
+            <a
+                href="https://wa.me/+918329860385?text=Hey!%20I%20just%20came%20across%20Devigns%20and%20love%20your%20work.%20I%E2%80%99m%20looking%20for%20Design%20%26%20Development%20services%20and%20would%20love%20to%20discuss%20how%20you%20can%20help!">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <div id="location">
+            <h5>Powered from Mumbai</h5>
+            <img src="./Assets/Vitthal.svg" alt="Lord Vitthal" loading="lazy">
+        </div>
+
+
+    </section>
+
+
+    <footer>
+        <p><span style="font-family: 'Amsterdam Three';" id="company" class="hidden"
+                data-animation="unblur">Devigns</span> &copy;<span id="year"></span>.
+            All rights
+            reserved.</p>
+        <p id="legal">
+            <a href="/terms-and-conditions.html" target="_blank">Terms & Conditions </a> |
+            <a href="/privacy-policy.html" target="_blank">Privacy Policy</a>
+        </p>
+
+    </footer>
+    <script defer src="script.js"></script>
+    <script defer src="contact.js"></script>
+    <script defer src="CollapsibleFAQ.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function updateSummary() {
+                document.getElementById("summarydetails").innerHTML = `
+                    <p><strong>Name:</strong> ${document.getElementById("name").value || "Not Provided"}</p>
+                    <p><strong>Email:</strong> ${document.getElementById("email").value || "Not Provided"}</p>
+                    <p><strong>Phone:</strong> ${document.getElementById("phone").value || "Not Provided"}</p>
+                    <p><strong>Country:</strong> ${document.getElementById("country").value || "Not Provided"}</p>
+                    <p><strong>Needs:</strong> ${document.getElementById("needs").value || "Not Provided"}</p>
+                    <p><strong>Services Requested:</strong> ${Array.from(document.querySelectorAll('input[name="service"]:checked'))
+                        .map(el => el.nextElementSibling.textContent).join(", ") || "None"}</p>
+                    <p><strong>Company Name:</strong> ${document.getElementById("companyname").value || "Not Provided"}</p>
+                    <p><strong>What You Do:</strong> ${document.getElementById("yourwork").value || "Not Provided"}</p>
+                    <p><strong>Preferred Contact Methods:</strong> ${Array.from(document.querySelectorAll('input[name="contactoptions"]:checked'))
+                        .map(el => el.nextElementSibling.textContent).join(", ") || "None"}</p>
+                    <p><strong>How You Found Us:</strong> ${Array.from(document.querySelectorAll('input[name="how_found_us"]:checked'))
+                        .map(el => el.nextElementSibling.textContent).join(", ") || "None"}</p>
+                `;
+            }
+
+            // Attach event listeners to form inputs
+            document.querySelectorAll("input, textarea").forEach(input => {
+                input.addEventListener("input", updateSummary);
+            });
+
+            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+                checkbox.addEventListener("change", updateSummary);
+            });
+
+
+
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>

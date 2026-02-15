@@ -1,0 +1,1057 @@
+
+
+#contactFirst {
+    flex-direction: column;
+    gap: 7rem;
+    min-height: 100vh;
+    height: auto;
+
+}
+
+
+
+#contactFirst h1 {
+    text-align: center;
+    font-size: 10rem;
+    color: #4b3314;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.06;
+    font-weight: 550;
+    white-space: nowrap;
+}
+
+
+#contactFirst h1 span {
+    font-family: 'Amsterdam Three';
+    color: #be3946;
+    font-weight: 550;
+}
+
+#contactFirst>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+#contactFirst p {
+    color: #4b3314;
+    text-align: center;
+    width: 75%;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+#Half-Lotus {
+    position: absolute;
+    height: 80%;
+    left: -10rem;
+    bottom: -35%;
+  }
+
+
+#contactSecond {
+    /* padding-top: 5rem;
+padding-bottom: 5rem; */
+    align-items: flex-end;
+    padding: 5rem 2rem;
+
+}
+
+
+
+
+
+#contactSecond>div {
+    min-height: 60rem;
+    height: auto;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 5rem;
+    background-color: rgba(227, 130, 134, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#contactSecond h2 {
+    color: #4b3314;
+    font-size: 4rem;
+    text-align: center;
+    border-bottom: .3rem solid #4b3314;
+}
+
+#contactSecond h2 span {
+    color: #be3946;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 80%;
+}
+
+label {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #4b3314;
+    text-align: left;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 550;
+    border-radius: 0.5rem;
+    background: #fce7e4;
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid transparent;
+    /* Prevent layout shift */
+    transition: all .5s ease-in-out;
+}
+
+input::placeholder {
+    color: rgba(75, 51, 20, 0.2);
+}
+
+#contactFormFirst a {
+    align-self: flex-end;
+
+}
+
+.down-arrow-container {
+    background-color: #be3946;
+    color: white;
+    border: none;
+    transition: all .2s ease-in-out;
+
+}
+
+
+#next1:hover,
+#next2:hover,
+#next3:hover,
+#next4:hover {
+    background-color: #4b3314e0;
+}
+
+
+
+#next1 {
+    align-self: end;
+}
+
+
+
+
+.suggestions {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    max-width: 100%;
+    width: fit-content;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+/* Focus effect: Highlight the input when selected */
+input:focus {
+    outline: none;
+    box-shadow: 2px 2px 10px rgba(2, 2, 2, 0.781);
+    /* Soft glow */
+}
+
+
+
+
+
+
+
+#contactThird {
+    align-items: flex-end;
+    padding: 5rem 2rem;
+
+}
+
+
+
+
+
+#contactThird>div {
+    min-height: 60rem;
+    height: auto;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 5rem;
+    background-color: rgba(227, 130, 134, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#contactThird h2 {
+    color: #4b3314;
+    font-size: 4rem;
+    text-align: center;
+    border-bottom: .3rem solid #4b3314;
+}
+
+#contactThird h2 span {
+    color: #be3946;
+}
+
+
+
+textarea {
+    max-width: 100%;
+    min-height: 100px;
+    /* Enough space for a few lines */
+    max-height: 120px;
+    /* Prevents excessive expansion */
+    overflow-y: auto;
+    /* Enables scrolling if content exceeds max-height */
+    resize: none;
+    /* Disables manual resizing */
+    font-size: 1.8rem;
+    transition: all .3s ease-in-out;
+
+}
+
+textarea::placeholder {
+    color: rgba(75, 51, 20, 0.2);
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* Focus effect: Highlight the input when selected */
+textarea:focus {
+    outline: none;
+    box-shadow: 2px 2px 10px rgba(2, 2, 2, 0.781);
+    /* Soft glow */
+}
+
+
+.prev {
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    border: 2px solid black;
+}
+
+
+
+
+
+
+
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 100%;
+}
+
+.checkbox-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 550;
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+    background: #fce7e4;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid transparent;
+}
+
+.custom-checkbox input {
+    display: none;
+    /* Hide default checkbox */
+}
+
+/* Apply styles to the parent when the input inside is checked */
+.custom-checkbox input:checked+.checkmark {
+    color: white;
+}
+
+.custom-checkbox input:checked+.checkmark,
+.custom-checkbox input:checked~.checkmark {
+    color: white;
+}
+
+.custom-checkbox input:checked~span {
+    color: white;
+}
+
+.custom-checkbox input:checked {
+    color: white;
+}
+
+/* Correct way: Use the `:has()` selector (for modern browsers) */
+.custom-checkbox:has(input:checked) {
+    background: #be3946;
+    color: white;
+    border: 2px solid #be3946;
+    box-shadow: 0px 4px 10px rgba(190, 57, 70, 0.4);
+}
+
+
+
+
+
+
+#contactFourth {
+    align-items: flex-end;
+    padding: 5rem 2rem;
+
+}
+
+
+
+
+
+#contactFourth>div {
+    min-height: 60rem;
+    height: auto;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 5rem;
+    background-color: rgba(227, 130, 134, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#contactFourth h2 {
+    color: #4b3314;
+    font-size: 4rem;
+    text-align: center;
+    border-bottom: .3rem solid #4b3314;
+}
+
+#contactFourth h2 span {
+    color: #be3946;
+}
+
+
+#contactFifth {
+    align-items: flex-end;
+    padding: 5rem 2rem;
+
+}
+
+
+
+
+
+#contactFifth>div {
+    min-height: 60rem;
+    height: auto;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 5rem;
+    background-color: rgba(227, 130, 134, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#contactFifth h2 {
+    color: #4b3314;
+    font-size: 4rem;
+    text-align: center;
+    border-bottom: .3rem solid #4b3314;
+}
+
+#contactFifth h2 span {
+    color: #be3946;
+}
+
+#contactSixth {
+    align-items: flex-end;
+    padding: 5rem 2rem;
+
+}
+
+
+
+
+
+#contactSixth>div {
+    min-height: 60rem;
+    height: auto;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 5rem;
+    background-color: rgba(227, 130, 134, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#contactSixth h2 {
+    color: #4b3314;
+    font-size: 3rem;
+    font-weight: 550;
+    text-align: center;
+    border-bottom: .3rem solid #4b3314;
+}
+
+#contactSixth h2 span {
+    color: #be3946;
+}
+
+
+#contactSixth h3 {
+    text-align: center;
+    font-size: 8rem;
+    color: #4b3314;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.06;
+    font-weight: bold;
+}
+
+
+
+.submit {
+    background-color: #be3946;
+    border: none;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.submit:hover {
+    /* background-color:#F4B400;*/
+    background-color: #D84558;
+}
+
+.submit:active {
+    color: transparent;
+}
+
+
+.final-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+
+#contactSummary {
+    align-items: flex-end;
+    padding: 5rem 2rem;
+
+}
+
+
+
+
+
+#contactSummary>div {
+    min-height: 60rem;
+    height: auto;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 5rem;
+    background-color: rgba(227, 130, 134, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem 0;
+}
+
+#contactSummary h2 {
+    color: #4b3314;
+    font-size: 4rem;
+    text-align: center;
+    border-bottom: .3rem solid #4b3314;
+}
+
+#contactSummary h2 span {
+    color: #be3946;
+}
+
+
+#summarydetails {
+    width: 75%;
+    
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}
+
+#summarydetails p{
+    margin-bottom: .5rem;
+    color: black;
+    
+    white-space: normal;
+}
+
+#contactSummary {
+    color: #4b1414;
+    text-align: left;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+#note {
+    width: 75%;
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+
+
+
+#submitted {
+    align-items: flex-end;
+    padding: 5rem 2rem;
+
+}
+
+
+
+
+
+#submitted>div {
+    min-height: 60rem;
+    height: auto;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 5rem;
+    background-color: rgba(227, 130, 134, 0.2); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#submitted h2 {
+    color: #4b3314;
+    font-size: 4rem;
+    text-align: center;
+    border-bottom: .3rem solid #4b3314;
+}
+
+#submitted h2 span {
+    color: #be3946;
+}
+
+
+#submitted p {
+    color: #4b3314;
+    text-align: left;
+    width: 75%;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+#submitted p a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding: 6rem 0;
+}
+
+.contact-item {
+    color: #4b3314;
+    font-weight: 550;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon-container {
+    position: relative;
+    height: 10rem;
+    width: 10rem;
+    border: 3px solid #4b3314;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.icon-container i {
+    font-size: 5rem;
+}
+
+.contact-item span {
+
+    font-size: 2rem;
+}
+
+
+
+.agreement label {
+    font-size: 1.7rem;
+}
+
+
+#agreementCheckbox {
+    width: fit-content;
+    margin-right: 8px;
+    transform: scale(1.4);
+    box-shadow: none;
+    accent-color: #4B3314;
+}
+
+
+
+
+#contactSections section {
+    display: none;
+    /* Hide all sections initially */
+    animation: fadeIn 0.5s ease-in-out;
+    /* Smooth fade-in effect */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .icon-container {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .icon-container i {
+        font-size: 4rem;
+    }
+
+    .contact-item span {
+        font-size: 1.7rem;
+    }
+
+
+}
+
+@media screen and (max-width: 639px) {
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .icon-container {
+        border: 2px solid #4b3314;
+
+    }
+
+}
+
+
+
+
+
+
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+
+    #contactFirst {
+        gap: 7rem;
+    }
+
+
+
+    #contactFirst h1 {
+        font-size: 9rem;
+        line-height: 1;
+    }
+
+
+    #contactFirst p {
+        font-size: 2.3rem;
+        line-height: 1.3;
+    }
+
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+
+    #contactFirst {
+        gap: 5rem;
+    }
+
+
+
+    #contactFirst h1 {
+        font-size: 7rem;
+        line-height: 1;
+    }
+
+
+    #contactFirst p {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+    #contactFirst {
+        gap: 3rem;
+    }
+
+    #contactFirst>div {
+        flex-direction: column;
+        gap: 1.3rem;
+    }
+
+    #contactFirst h1 {
+        font-size: 4.5rem;
+        line-height: 1.3;
+    }
+
+
+    #contactFirst p {
+        font-size: 2rem;
+        line-height: 1.4;
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    #Half-Lotus {
+        height: 70%;
+        left: -8rem;
+        bottom: -30%;
+      }
+
+}
+
+@media screen and (max-width: 480px) {
+
+
+    #contactFirst {
+        gap: 3rem;
+    }
+
+    #contactFirst h1 {
+        font-size: 3.3rem;
+        line-height: 1.2;
+    }
+
+
+
+
+    #contactFirst p {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+    #Half-Lotus {
+        height: 55%;
+        left: -5rem;
+        bottom: -20%;
+      }
+
+}
+
+@media screen and (max-width: 350px) {
+
+
+    #contactFirst {
+        gap: 2rem;
+    }
+
+    #contactFirst h1 {
+        font-size: clamp(2.7rem, 2vw, 3.2rem);
+        line-height: 1.2;
+    }
+
+
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    #contactSections section h2 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+
+    #contactSections section h2 {
+        font-size: 3rem;
+    }
+
+    #contactSixth h3 {
+        font-size: 6rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 639px) {
+
+    #contactSections section h2 {
+        font-size: 2.3rem;
+    }
+
+    #contactSections section label {
+        font-size: 2rem;
+    }
+
+    #contactSections section label span {
+        font-size: 1.5rem;
+    }
+
+    #contactSections section input {
+        font-size: 1.8rem;
+    }
+
+    #contactSections section textarea {
+        font-size: 1.8rem;
+    }
+
+    #contactSections section input::placeholder {
+        color: transparent;
+    }
+
+    #contactSixth h3 {
+        font-size: 4.7rem;
+    }
+
+    .agreement label {
+        font-size: 1.7rem !important;
+    }
+
+    .agreement {
+        padding: 0 2rem;
+        text-align: center;
+        line-height: 1.2;
+
+    }
+
+    #agreementCheckbox {
+        transform: scale(1.2);
+
+    }
+
+    #contactSixth .final-buttons {
+        gap: 1rem;
+    }
+
+    #contactSixth .final-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .action-buttons {
+        display: flex;
+        gap: 1rem;
+    }
+
+    #submitted>div {
+    min-height: fit-content;
+    padding: 5rem 0;
+    }
+
+    #submitted p {
+        font-size: 1.7rem;
+    }
+    #summarydetails p{
+        font-size: 1.8rem;
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+    .action-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    #contactSections section h2 {
+        font-size: 2.1rem;
+        line-height: 1.1;
+        margin: 0 2rem;
+        padding-bottom: .5rem;
+
+    }
+
+    #contactSections section label {
+        font-size: 1.7rem;
+        line-height: 1.2;
+    }
+
+    #contactSections section label span {
+        font-size: 1.5rem;
+    }
+
+    #contactSections section input {
+        font-size: 1.5rem;
+    }
+
+    #contactSections section textarea {
+        font-size: 1.5rem;
+    }
+
+    #contactSections section input::placeholder {
+        color: transparent;
+    }
+
+    #contactSections section input,
+    textarea {
+        padding: .7rem;
+
+    }
+
+    #contactSections section>div {
+        min-height: fit-content;
+        padding: 5rem 0;
+    }
+
+    #contactSixth h3 {
+        font-size: 4rem;
+        padding: 0 2rem;
+    }
+
+    #contactSixth h2 span {
+        font-size: 2.7rem !important;
+    }
+
+    #contactSixth h2 {
+        font-size: 1.9rem !important;
+    }
+
+    .agreement label {
+        font-size: 1.5rem !important;
+    }
+
+    .agreement {
+        padding: 0 2rem;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    #agreementCheckbox {
+        transform: scale(1.2);
+    }
+
+    #contactSixth .final-buttons {
+        gap: 1rem;
+    }
+
+    #contactSixth .final-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .action-buttons {
+        display: flex;
+        gap: 1rem;
+    }
+    #submitted>div {
+        min-height: fit-content;
+        padding: 5rem 0;
+        }
+    
+        #submitted p {
+            font-size: 1.7rem;
+        }
+
+        #contactSummary .final-buttons{
+            gap: 1rem;
+        }
+        #summarydetails p{
+            font-size: 1.6rem;
+        }
+}
+
+
+@media screen and (max-width: 300px) {
+    #contactSummary .final-buttons{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,831 @@
+html {
+  scroll-padding-top: 12rem;
+  /* Ensures content is not hidden behind header when jumping to a section */
+}
+
+#FAQ-First {
+  position: relative;
+
+}
+
+#FAQ-First h1 {
+  font-size: 8rem;
+  text-align: right;
+  line-height: 1.2;
+  border-right: 3px solid black;
+  padding-right: 5rem;
+  color: #4b3314;
+}
+
+#FAQ-First ul {
+  font-size: 2.2rem;
+  font-weight: 550;
+  height: 35rem;
+  padding: 2rem 5rem;
+  overflow-y: scroll;
+  width: 50rem;
+  list-style: none;
+  border: 1.5px solid gray;
+  border-left: none;
+  border-right: none;
+  color: #be3946;
+  line-height: 1.2;
+}
+
+#FAQ-First ul li {
+  transition: all 0.3s ease-in;
+  margin-bottom: 1rem;
+
+}
+
+#FAQ-First ul a {
+  text-decoration: none;
+  color: #000000;
+  transition: all 0.3s ease-in;
+
+}
+
+#FAQ-First ul li:hover a {
+  color: #be3946;
+}
+
+#FAQ-First ul li:hover {
+  color: #be3946;
+}
+
+
+#half-Lotus {
+  height: 90%;
+  position: absolute;
+  left: -10rem;
+  bottom: -35%;
+  pointer-events: none;
+
+}
+
+#FAQ-Second {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#FAQ-Second h2 {
+  font-size: 5rem;
+  text-align: center;
+  line-height: 1.2;
+  width: 100%;
+  border-bottom: 2px solid black;
+  width: fit-content;
+  padding: 0 1rem 1rem 1rem;
+
+}
+
+
+#AllTopics {
+  height: 50rem;
+  overflow-y: scroll;
+  padding: 2rem 4rem;
+}
+
+.faqbigcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.faqbigcontainer h4 {
+  font-size: 2.5rem;
+  color: #4b3314;
+  line-height: 1.2;
+  width: 90%;
+  border-left: .5rem solid #000000;
+  margin: 2rem 0;
+  padding-left: 1rem;
+
+}
+
+
+
+
+.accordion {
+  button {
+    font-size: 1.9rem;
+    border-radius: 0rem;
+
+  }
+
+
+  & .accordion-content {
+    p {
+      font-size: 1.8rem;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+#FAQ-Third {
+  flex-direction: column;
+  min-height: unset;
+  height: auto;
+  gap: 4rem;
+  padding: 5rem 0;
+}
+
+#FAQ-Third h2 {
+  line-height: 1.2;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+
+
+#moreQues {
+  height: fit-content;
+  padding: 3rem 0;
+  /* 60% of the space */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#CallCTA {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+
+#HandShakeImgDiv {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+
+}
+
+#HandShakeImgDiv img {
+  width: 90%;
+  object-fit: contain;
+  position: absolute;
+  bottom: 5%;
+  pointer-events: none;
+
+}
+
+
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.input-wrapper input {
+  width: 100%;
+  border-radius: 1.5rem;
+  font-size: 2.2rem;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 2px solid transparent;
+  padding: 1.5rem 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 550;
+}
+
+
+.input-wrapper input::placeholder {
+  color: #202020e3;
+  font-style: italic;
+
+}
+
+.input-wrapper a {
+  position: absolute;
+  right: 2rem;
+  height: 4rem;
+  width: 4rem;
+  background-color: #4b3314;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: .4rem;
+  font-size: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.input-wrapper a:hover {
+  opacity: 70%;
+}
+
+
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+
+  #FAQ-First h1 {
+    font-size: 6rem;
+    padding-right: 2rem;
+  }
+
+  #FAQ-First ul {
+    width: 45rem;
+    font-size: 2rem;
+  }
+
+
+  #half-Lotus {
+    height: 80%;
+    bottom: -30%;
+  }
+
+
+
+  .faqbigcontainer h4 {
+    font-size: 2.2rem;
+
+  }
+
+
+
+
+  .accordion {
+    button {
+      font-size: 1.8rem;
+    }
+
+
+    & .accordion-content {
+      p {
+        font-size: 1.7rem;
+      }
+    }
+
+
+  }
+
+  .container {
+    width: 80rem;
+  }
+
+
+
+  #FAQ-Third {
+    gap: 2rem;
+    padding: 3rem 0;
+  }
+
+  #FAQ-Third h2 {
+    font-size: 4rem;
+  }
+
+
+  .input-wrapper input {
+    font-size: 2rem;
+  }
+
+  #HandShakeImgDiv {
+    height: 20rem;
+
+  }
+
+  #HandShakeImgDiv img {
+    width: 100%;
+    bottom: 15%;
+  }
+
+}
+
+
+
+@media (min-width: 769px) and (max-width:1024px) {
+
+  #FAQ-First h1 {
+    font-size: 4.5rem;
+    padding-right: 2.5rem;
+  }
+
+  #FAQ-First ul {
+    width: 40rem;
+    font-size: 1.9rem;
+    height: 30rem;
+    padding: 2rem 3rem;
+  }
+
+
+  #half-Lotus {
+    height: 75%;
+    bottom: -30%;
+  }
+
+  #FAQ-Second h2 {
+    font-size: 4rem;
+    padding-bottom: .5rem;
+  }
+
+  .faqbigcontainer h4 {
+    font-size: 2rem;
+
+  }
+
+
+
+
+  .accordion {
+    button {
+      font-size: 1.8rem;
+    }
+
+
+    & .accordion-content {
+      p {
+        font-size: 1.7rem;
+      }
+    }
+
+
+  }
+
+  .container {
+    width: 62rem;
+  }
+
+  #AllTopics {
+    padding: 0;
+    padding-right: 2rem;
+  }
+
+  .input-wrapper {
+    width: 80%;
+  }
+
+
+  .input-wrapper input {
+    font-size: 2rem;
+    padding: 1.5rem;
+  }
+
+  #FAQ-Third {
+
+    gap: 2rem;
+    padding: 1.5rem 0;
+  }
+
+  #HandShakeImgDiv {
+    height: 15rem;
+
+  }
+
+  #HandShakeImgDiv img {
+    width: 100%;
+    bottom: 15%;
+  }
+}
+
+
+
+@media (min-width: 640px) and (max-width:768px) {
+
+  #FAQ-First {
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 12rem;
+  }
+
+  #FAQ-First h1 {
+    padding: 0;
+    border: none;
+    border-bottom: 3px solid black;
+    font-size: 4.5rem;
+    text-align: center;
+
+  }
+
+  #FAQ-First ul {
+    border: none;
+    width: 50rem;
+    font-size: 1.9rem;
+    height: 25rem;
+    list-style: disc;
+    margin-bottom: 3rem;
+  }
+
+
+
+
+  #half-Lotus {
+    height: 47%;
+    bottom: -20%;
+    left: -7rem;
+  }
+
+  #FAQ-Second h2 {
+    font-size: 3.5rem;
+    padding-bottom: .5rem;
+    width: 80%;
+  }
+
+
+
+  .faqbigcontainer h4 {
+    font-size: 1.9rem;
+    margin: 1rem 0;
+    /* width: 50%; */
+
+  }
+
+
+
+
+  .accordion {
+    button {
+      font-size: 1.8rem;
+    }
+
+
+    & .accordion-content {
+      p {
+        font-size: 1.7rem;
+      }
+    }
+
+
+  }
+
+
+
+  #AllTopics {
+    padding: 0;
+    padding-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .input-wrapper {
+    width: 80%;
+  }
+
+
+  .input-wrapper input {
+    font-size: 2rem;
+    padding: 1.5rem;
+  }
+
+  #FAQ-Third {
+
+    gap: 2rem;
+    padding: 1.5rem 0;
+  }
+
+  #HandShakeImgDiv {
+    height: 15rem;
+
+  }
+
+  #HandShakeImgDiv img {
+    width: 100%;
+    bottom: 15%;
+  }
+}
+
+
+@media (min-width: 480px) and (max-width: 639px) {
+
+  #FAQ-First {
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 3rem;
+  }
+
+  #FAQ-First h1 {
+    padding: 0;
+    border: none;
+    border-bottom: 3px solid black;
+    font-size: 4.5rem;
+    text-align: center;
+
+  }
+
+  #FAQ-First ul {
+    border: none;
+    width: 75%;
+    font-size: 1.9rem;
+    height: 25rem;
+    list-style: disc;
+    margin-bottom: 3rem;
+    padding: 2rem 3rem;
+    padding-left: 7rem;
+
+  }
+
+
+
+
+  #half-Lotus {
+    height: 45%;
+    bottom: -18%;
+    left: -7rem;
+  }
+
+  #FAQ-Second{
+    min-height: unset;
+    height: auto;
+  }
+
+  #FAQ-Second h2 {
+    font-size: 3.5rem;
+    padding-bottom: .5rem;
+    width: 80%;
+  }
+
+  
+
+  .faqbigcontainer h4 {
+    font-size: 1.9rem;
+    margin: 1rem 0;
+    /* width: 50%; */
+
+  }
+
+
+
+
+  .accordion {
+    button {
+      font-size: 1.8rem;
+    }
+
+
+    & .accordion-content {
+      p {
+        font-size: 1.7rem;
+      }
+    }
+
+
+  }
+
+
+
+  #AllTopics {
+    padding: 2rem;
+    /* padding-right: 2rem; */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .input-wrapper {
+    width: 85%;
+  }
+
+
+  .input-wrapper input {
+    font-size: 1.7rem;
+    padding: 1rem 1.5rem;
+    text-overflow: ellipsis;
+    padding-right: 15%;
+  }
+
+  .input-wrapper a {
+    height: 3rem;
+    width: 3rem;
+    right: 1.4rem;
+  }
+
+  #FAQ-Third {
+min-height: unset;
+height: auto;
+    gap: 2rem;
+    padding: 1.5rem 0;
+  }
+  #FAQ-Third h2 {
+    font-size: 3.8rem;
+    text-align: center;
+  }
+
+  #moreQues {
+    padding: 1.5rem 0;
+  }
+
+
+  #HandShakeImgDiv {
+    height: 10rem;
+
+  }
+
+  #HandShakeImgDiv img {
+    width: 100%;
+    bottom: 15%;
+  }
+}
+
+
+
+@media screen and (max-width: 479px) {
+  #FAQ-First {
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+    /* min-height: unset;
+    height: auto; */
+  }
+
+  #FAQ-First h1 {
+    padding: 0;
+    border: none;
+    border-bottom: 3px solid black;
+    font-size: 4rem;
+    text-align: center;
+line-height: 1.1;
+  }
+
+  #FAQ-First ul {
+    border: none;
+    width: 85%;
+    font-size: 1.8rem;
+    height: 25rem;
+    list-style: disc;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    padding-left: 5rem;
+  }
+
+  #FAQ-First ul li {
+  margin-bottom: .7rem;
+  }
+
+
+  #half-Lotus {
+    height: 50%;
+    bottom: -12%;
+    left: -7rem;
+  }
+
+  #FAQ-Second{
+    min-height: unset;
+    height: auto;
+    gap: .5rem;
+  }
+
+  #FAQ-Second h2 {
+    font-size: 2.7rem;
+    padding-bottom: 0;
+    width: 70%;
+  }
+
+  
+
+  .faqbigcontainer h4 {
+    font-size: 1.9rem;
+    margin: .5rem 0;
+
+  }
+
+
+
+
+  .accordion {
+    button {
+      font-size: 1.8rem;
+    }
+
+
+    & .accordion-content {
+      p {
+        font-size: 1.7rem;
+      }
+    }
+
+
+  }
+
+
+
+  #AllTopics {
+    padding: 1rem 2rem;
+    /* padding-right: 2rem; */
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  .input-wrapper {
+    width: 85%;
+  }
+
+
+  .input-wrapper input {
+    font-size: 1.7rem;
+    padding: 1rem 1.5rem;
+    text-overflow: ellipsis;
+    padding-right: 15%;
+    border: 1px solid black;
+  }
+
+  .input-wrapper a {
+    height: 3rem;
+    width: 3rem;
+    right: 1.4rem;
+  }
+
+  #FAQ-Third {
+min-height: unset;
+height: auto;
+    gap: 2rem;
+    padding: 1.5rem 0;
+  }
+  #FAQ-Third h2 {
+    font-size: 3.8rem;
+    text-align: center;
+  }
+
+  #moreQues {
+    padding: .5rem 0;
+  }
+
+  #HandShakeImgDiv {
+    height: 8rem;
+
+  }
+
+  #HandShakeImgDiv img {
+    width: 100%;
+    bottom: 18%;
+  }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  /* Chrome, Safari, Edge */
+  #FAQ-First ul::-webkit-scrollbar {
+    width: 8px;
+    /* Set width of scrollbar */
+  }
+
+  /* Firefox */
+  #FAQ-First ul {
+    scrollbar-width: thin;
+    /* Firefox's built-in thin scrollbar */
+  }
+
+  /* Chrome, Safari, Edge */
+  #AllTopics::-webkit-scrollbar {
+    width: 8px;
+    /* Set width of scrollbar */
+  }
+
+  /* Firefox */
+  #AllTopics {
+    scrollbar-width: thin;
+    /* Firefox's built-in thin scrollbar */
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 639px) {
+  .accordion {
+    button {
+      font-size: 1.6rem;
+      border-radius: 1rem;
+    }
+
+
+    & .accordion-content {
+      p {
+        font-size: 1.5rem;
+        padding-left: .5em;
+        padding-right: .5em;
+      }
+    }
+
+  }
+
+}

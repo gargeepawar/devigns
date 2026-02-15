@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sameer Singh, Gargee Pawar">
+    <title>Best Design & Development Agency in India | Web Design, Website Development, UI/UX, Branding - Devigns</title>
+
+    <meta name="description"
+        content="Devigns is India's leading design & development agency, specializing in web design, UI/UX, branding, eCommerce, and custom website development. We help startups & enterprises build premium, high-converting, SEO-friendly websites. From Bharat to the World!">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Smooth scrollbar library -->
+    <script src="https://unpkg.com/smooth-scrollbar/dist/smooth-scrollbar.js"></script>
+
+
+
+
+    <link rel="canonical" href="https://www.devigns.in/">
+    <link rel="apple-touch-icon" sizes="144x144" href="./Assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon-16x16.png">
+
+    <!-- Open Graph tags for social media sharing -->
+    <meta property="og:title" content="Devigns - Culturally Inspired Creative Agency">
+    <meta property="og:description"
+        content="A Call from Your Roots…will you pick it? We design websites, UI/UX, and branding that feel premium and authentic. Taking brands from Bharat to the world with world-class creativity.">
+    <meta property="og:image" content="https://www.devigns.in/Assets/ogImage.png">
+    <meta property="og:url" content="https://www.devigns.in/">
+
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <svg id="Swastik" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 122.56">
+            <path
+                d="M117.92,122.22a34.87,34.87,0,0,1-9.47-5.81C94.13,103.65,97.07,90.13,96.42,73L71.51,71.84c-.11,6.5-.25,15.29-.56,21.52-.3,6,.24,14.7-4.41,19.12-8.4,8-39.22-2-57.2,6-2.42,1.09-4.68,3.27-7.24,3-.82-.09-1.95-.57-2.1-1.52.77-9.84,9.77-20.2,24.16-23.09l26.21-1L51.16,72c-6.69-.11-14.62-.25-21.33-.59-6-.3-13.77-.4-18.2-5.06C8.24,62.79,7.2,57.45,7.7,49.89a184.82,184.82,0,0,0,.56-21C8,21.49,7.8,16.75,4.69,9.82,3.6,7.4.82,4.36,1.1,1.81A1.58,1.58,0,0,1,2.61.31c9.48,1.85,21.76,12.52,22.71,24.33l1,25.82H50.76c.19-7.37.27-27,2.18-33.5a12.46,12.46,0,0,1,3.34-5.72c9.85-9.35,39.74.16,57.09-7.63,2.43-1.08,5.46-3.86,8-3.59a1.59,1.59,0,0,1,1.49,1.51C117.7,28.13,92.87,25.2,72,26.4V51.66c6.69.11,14.23.25,20.94.59,6,.3,13.2.31,17.62,5,7.1,7.47,4,27,4.34,37.73.23,7.42-.36,12.18,3.18,18.9.72,1.37,1.87,3,2.8,4.54,1.77,2.94,0,5-2.91,3.83ZM84.06,78.54a6,6,0,1,1-6,6,6,6,0,0,1,6-6Zm-45.28,0a6,6,0,1,1-6,6,6,6,0,0,1,6-6ZM84.06,32.15a6,6,0,1,1-6,6,6,6,0,0,1,6-6Zm-45.28,0a6,6,0,1,1-6,6,6,6,0,0,1,6-6Z" />
+        </svg>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="menu-modal hidden" id="menu-modal" style="display: none;" data-animation="fadeIn">
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/aboutus.html">ABOUT US</a></li>
+            <li><a href="/blogs.html">BLOGS</a></li>
+            <li><a href="/services.html">SERVICES</a></li>
+            <li><a href="/contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+
+
+
+    <header>
+
+        <nav class="hidden" data-animation="fadeIn">
+            <div class="menu-toggle hidden" id="menu-toggle" data-animation="slideMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+                <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/aboutus.html">About us</a></li>
+            <li><a href="/blogs.html">Blogs</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li style="border: none;"><a href="/contact.html">Contact</a></li>
+        </ul>
+        </nav>
+
+        <div class="header-right">
+            <a href="/contact.html"><button class="hidden bubble-btn" data-animation="fadeIn">Let's Create ✦<div class="bubble-overlay"></div>
+            </button></a>
+            <a href="/">
+                <img src="./Assets/headerIcon.png" alt="Devigns Icon" loading="lazy">
+              </a>
+        </div>
+    </header>
+
+
+    <!-- <div id="scroll-container" data-scrollbar> -->
+
+    <section id="home" data-scroll-section>
+        <img src="./Assets/leaves.svg" alt="Leaves" id="leaves" class="hidden" data-animation="slideToRight">
+        <h1 class="hidden" data-animation="fadeIn">A CULTURALLY INSPIRED <span class="hidden"
+                data-animation="unblurRepeat">Creative Agency</span></h1>
+        <h2>We Offer Premium, World-Class Design & Development Services.</h2>
+        <a href="#home2" id="arrowBOX">
+            <div class="arrow-container">
+                <i class="fa-solid fa-arrow-down arrow"></i>
+            </div>
+        </a>
+
+    </section>
+
+
+    <section id="home2" data-scroll-section>
+        <img src="./Assets/HomeLLotus.svg" alt="Aesthetic Lotus - Devigns" id="home-left-lotus" class="hidden"
+            data-animation="forLlotus" loading="lazy">
+        <img src="./Assets/HomeRLotus.svg" alt="Aesthetic Lotus - Devigns" id="home-right-lotus" class="hidden"
+            data-animation="forRlotus" loading="lazy">
+        <div id="layer1" class="hidden" data-animation="breathe">
+            <div id="layer2">
+                <img src="./Assets/Devigns-Official-logo-Transparent.webp" alt="Devigns official logo" loading="lazy">
+            </div>
+        </div>
+        <div class="btnCon">
+            <a href="/services.html"><button class="hidden bubble-btn" data-animation="fadeIn">Explore ╰┈➤<div
+                        class="bubble-overlay"></div>
+                </button></a>
+        </div>
+
+        <h2>Your Story,<br> Our Divine Creation</h2>
+        <hr class="hidden" data-animation="slideToRight">
+    </section>
+
+
+
+
+    <section id="about" data-scroll-section>
+        <div class="custom-container">
+            <div class="row row-1">
+                <div class="col col-1 ">
+                    <h1>AT</h1>
+                </div>
+                <div class="col col-2 hidden" data-animation="slideFromUp">
+                    <p>Our goal is to make your brand stand out with authenticity, feel premium, and be ready for the global stage.</p>
+                </div>
+            </div>
+            <div class="row row-2">
+                <h1>DEVIGNS, <span class="hidden" data-animation="slideIn">Devigns</span></h1>
+            </div>
+            <div class="row row-3">
+                <a href="/aboutus.html"><button class="hidden bubble-btn" data-animation="fadeIn">About us<div
+                            class="bubble-overlay"></div></button></a>
+            </div>
+        </div>
+        <img id="lotus" src="./Assets/Full-lotus.svg" alt="Lotus image" loading="lazy" class="hidden"
+            data-animation="slideUp">
+    </section>
+
+    <section id="blogs" data-scroll-section>
+        <div class="slider">
+
+            <div class="blogs-slide">
+                <div class="blog" id="left-blog">
+                    <img src="" alt="" loading="lazy">
+                    <p id="blogName"></p>
+                    <a href="" class="blog-link">Explore <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div id="logoincircle">
+                    <img id="blogsIcon" src="./Assets/Devigns-Mini-Icon-Transparent.webp" alt="Devigns-Mini-Icon"
+                        loading="lazy">
+                </div>
+                <div class="blog" id="right-blog">
+                    <img src="" alt="" loading="lazy">
+                    <p id="blogName"></p>
+                    <a href="" class="blog-link">Explore <i class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+            </div>
+            <div class="blogs-slide">
+                <div class="blog" id="left-blog">
+                    <img src="" alt="" loading="lazy">
+                    <p id="blogName"></p>
+                    <a href="" class="blog-link">Explore <i class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+                <div id="logoincircle">
+                    <img id="blogsIcon" src="./Assets/Devigns-Mini-Icon-Transparent.webp" alt="Devigns-Mini-Icon"
+                        loading="lazy">
+                </div>
+                <div class="blog" id="right-blog">
+                    <img src="" alt="" loading="lazy">
+                    <p id="blogName"></p>
+                    <a href="" class="blog-link">Explore <i class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+            </div>
+            <div class="blogs-slide">
+                <div class="blog" id="left-blog">
+                    <img src="" alt="" loading="lazy">
+                    <p id="blogName"></p>
+                    <a href="" class="blog-link">Explore <i class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+                <div id="logoincircle">
+                    <img id="blogsIcon" src="./Assets/Devigns-Mini-Icon-Transparent.webp" alt="Devigns-Mini-Icon"
+                        loading="lazy">
+                </div>
+                <div class="blog" id="right-blog">
+                    <img src="" alt="" loading="lazy">
+                    <p id="blogName"></p>
+                    <a href="" class="blog-link">Explore <i class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="journey" data-scroll-section>
+        <h1 class="hidden" data-animation="shiftDown">YOUR <br>JOURNEY <br>WITH US
+            <span id="journeyIcon"><img src="./Assets/Devigns-Mini-Icon-Transparent.webp" alt="Devigns-Mini-Icon"
+                        loading="lazy"></span>
+            <span id="journeySpan" class="hidden" data-animation="unblur">Devigns</span>
+
+        </h1>
+    </section>
+
+    <section id="journeycontent" data-scroll-section>
+        <a href="/contact.html"><button class="hidden bubble-btn" data-animation="fadeIn">Explore<div
+            class="bubble-overlay"></div></button></a>
+        <p class="hidden" data-animation="slideFromUp">With Devigns, your digital presence isn't just seen — it's felt across India and beyond. Experience the perfect synergy of tradition, creative design, and top-notch development with us.
+
+
+        </p>
+        <div id="journeycontentdiv" class="hidden" data-animation="slideTowardsRight">Rooted in Culture & Inspired
+            by Divine Creativity.</div>
+        <div>
+            <img id="journeycontentlotus" src="./Assets/Right-lotus.svg" alt="lotus flower" loading="lazy"
+                class="hidden" data-animation="slideUp">
+        </div>
+    </section>
+
+    <section id="services" data-scroll-section>
+        <h1>OUR <br>SERVICES</h1>
+        <img id="bigLotus" src="./Assets/BigLotusTransparent.webp" alt="Full aesthetic lotus" loading="lazy"
+            class="hidden" data-animation="slideUp">
+
+        <div id="servicescontainer">
+            <div class="smallDiv" id="smallDiv1">
+                DESIGNS
+                <a href="/services.html#DevignsDesignPackage">
+                    <div class="down-arrow-container">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div id="bigDiv">
+                <div id="minicontainer">
+                    <span class="hidden" data-animation="unblur">Devigns</span>
+                    <p>Our Special <br>package</p>
+                </div>
+
+                <a href="/services.html#DevignsSpecialPackage">
+                    <div class="down-arrow-container" style="background-color:#be3946a1;color: white;border: none;
+    transition: all .2s ease-in-out;">
+                        <i class="fa-solid fa-arrow-right downArrow"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="smallDiv" id="smallDiv2">
+                DEVELOPMENT
+                <a href="/services.html#DevignsDevelopmentPackage">
+                    <div class="down-arrow-container">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="approaches" data-scroll-section>
+
+        <div id="approachesContainer">
+            <div>
+                <p class="hidden" data-animation="shiftDown">Focus on User Needs</p>
+                <img src="./Assets/Approaches1.svg" alt="Approaches icon 1" loading="lazy">
+            </div>
+            <div>
+                <p class="hidden" data-animation="shiftUp">Strategic Development</p>
+                <img src="./Assets/Approaches2.svg" alt="Approaches icon 2" loading="lazy">
+            </div>
+            <div>
+                <p class="hidden" data-animation="shiftDown">Plan for Growth</p>
+                <img src="./Assets/Approaches3.svg" alt="Approaches icon 3" loading="lazy">
+            </div>
+            <div>
+                <p class="hidden" data-animation="shiftUp">Team Collaboration</p>
+                <img src="./Assets/Approaches4.svg" alt="Approaches icon 4" loading="lazy">
+            </div>
+        </div>
+        <h1 class="hidden" data-animation="shiftDown">APPROACHES
+            <span id="approachSpan" class="hidden" data-animation="unblur">Devigns</span>
+        </h1>
+
+    </section>
+
+    <section id="approachesContent" data-scroll-section>
+        <div>
+            <h2 class="hidden" data-animation="shiftUp">We blend the beauty of India's rich traditions with a modern
+                touch in everything we create. <strong>At the heart of everything we do is you. Your brand, your goals,
+                    your story.</strong>
+                We take a <strong>client-centric approach,</strong> tailoring every element to your business through
+                in-depth research and a deep understanding of what makes your brand special.
+                When you partner with us, you're not just getting a team of developers and designers - you're
+                getting a team that <strong>treats your project as our own.</strong></h2>
+            <a href="/aboutus.html"><button class="hidden bubble-btn" data-animation="fadeIn">Know more<div class="bubble-overlay">
+                    </div></button></a>
+        </div>
+    </section>
+
+    <section id="faq" data-scroll-section>
+        <h2>FAQs
+            <p class="hidden" data-animation="shiftUp">FIND YOUR ANSWER</p>
+        </h2>
+        <div id="faqbigcontainer">
+            <img id="faqbigcontainerimage" src="./Assets/Devigns-Mini-Icon-Transparent.webp" alt="Devigns mini icon"
+                loading="lazy" class="hidden" data-animation="shiftUp">
+            <div class="container">
+                <div class="accordion">
+                    <div class="accordion-item hidden" data-animation="slideTowardsRight">
+                        <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">What is
+                                Devigns?
+                            </span> <span class="icon"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Devigns is a creative design and development startup inspired by the rich cultural
+                                heritage of India. We specialize in crafting unique designs that blend traditional
+                                aesthetics with modern creativity, helping businesses tell their story beautifully.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item hidden" data-animation="slideTowardsRight">
+                        <button id="accordion-button-2" aria-expanded="false">
+                            <span class="accordion-title">What services does Devigns offer?
+                            </span>
+                            <span class="icon"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>At Devigns, we offer a variety of services to meet your branding and digital needs.
+                                Our
+                                expertise includes Logo design, Packaging, Website development, E-commerce
+                                solutions,
+                                and Business card design. Whether you're a startup or an established brand, we've
+                                got
+                                you covered.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item hidden" data-animation="slideTowardsRight">
+                        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">How do you ensure the success of a project?
+                            </span> <span class="icon"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>At Devigns, we believe the key to a successful project lies in collaboration and clear communication. From the very beginning, we work closely with you to understand your goals, vision, and needs. Our team values your input at every stage, ensuring that your feedback is not only heard but integrated into the design process.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item hidden" data-animation="slideTowardsRight">
+                        <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How can
+                                I
+                                contact Devigns for a project inquiry?
+                            </span><span class="icon"></span></button>
+                        <div class="accordion-content">
+                            <p>You can reach out to Devigns through their official website or connect via their
+                                social
+                                media platforms listed on their site.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item hidden" data-animation="slideTowardsRight">
+                        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How much do your services cost?
+                            </span><span class="icon"></span></button>
+                        <div class="accordion-content">
+                            <p>
+                                The cost of our services depends on the specifics of your project and the market. Once we discuss your needs and goals, we'll provide you with a personalized quote that suits your budget.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex;justify-content: right;align-items: center;padding: 2rem 1rem;">
+                    <a href="/FAQ.html" id="LearnMoreBtn">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="socials" data-scroll-section>
+        <div class="main-container hidden" data-animation="slideTowardsRight">
+            <h1>SOCIALS</h1>
+            <h1>SOCIALS</h1>
+            <h1>SOCIALS</h1>
+            <h1>SOCIALS</h1>
+        </div>
+
+        <div id="socialsDiv">
+            <div id="left-socials" class="hidden" data-animation="shiftUp">
+                <div class="outerDiv">
+                    <div class="borderDiv">
+                        <a href="https://www.instagram.com/devignsofficial/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="outerDiv">
+                    <div class="borderDiv">
+                        <a href="https://www.facebook.com/devignsofficial/" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="outerDiv">
+                    <div class="borderDiv">
+                        <a href="https://www.linkedin.com/company/devignsofficial/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div id="mid-socials">
+                <div id="socialsIconDiv">
+                    <div id="SocialsgradientCircle" class="hidden" data-animation="fadeInandScaleup">
+                        <img id="SocialsIcon" src="./Assets/Devigns-Mini-Icon-Transparent.webp" alt="Devigns-Mini-Icon"
+                            loading="lazy">
+
+                    </div>
+                </div>
+            </div>
+            <div id="right-socials" class="hidden" data-animation="shiftDown">
+                <div class="outerDiv">
+                    <div class="borderDiv">
+                        <a href="https://www.youtube.com/devignsofficial/" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="outerDiv">
+                    <div class="borderDiv">
+                        <a href="https://www.x.com/devignsofficial/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="outerDiv">
+                    <div class="borderDiv">
+                        <a href="https://in.pinterest.com/devignsofficial/" target="_blank"><i
+                                class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="/contact.html"><button class="hidden bubble-btn" data-animation="fadeIn">Connect!
+            <div
+            class="bubble-overlay"></div></button></a>
+
+    </section>
+
+
+    <section id="footerUpperHalf" data-scroll-section>
+
+        <div class="ocean">
+            <div class="wave"></div>
+        </div>
+
+        <div id="bigCircle">
+            <div id="smallCircle">
+                <p>Designed & Developed by</p>
+                <img src="./Assets/FooterLogo.png" alt="Devigns Official Logo"
+                    style="mix-blend-mode: multiply;width: 90%;" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section id="footerLowerHalf" data-scroll-section>
+        <h3>From <span id="Bharat" title="India">भारत</span> to the World.</h3>
+        <div class="heading-container">
+            <h1 class="DevignsInBG">DEVIGNS</h1>
+            <h2>A Call From Your Roots</h2>
+        </div>
+
+        <div class="social-bar" onclick="window.open('https://mail.google.com/mail/?view=cm&to=devignsofficial@gmail.com', '_blank')">
+            Let's Work Together! Drop us a mail.
+            <div class="icon">
+                    <i class="fas fa-envelope"></i>
+            </div>
+        </div>
+        <p>Will you pick it?</p>
+        <div class="callWhatsapp">
+            <a href="tel:+918329860385">
+                <i class="fas fa-phone" style="font-size: 2.3rem;"></i>
+            </a>
+
+            <a
+                href="https://wa.me/+918329860385?text=Hey!%20I%20just%20came%20across%20Devigns%20and%20love%20your%20work.%20I%E2%80%99m%20looking%20for%20Design%20%26%20Development%20services%20and%20would%20love%20to%20discuss%20how%20you%20can%20help!">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <div id="location">
+            <h5>Powered from Mumbai</h5>
+            <img src="./Assets/Vitthal.svg" alt="Lord Vitthal" loading="lazy">
+        </div>
+
+
+    </section>
+
+
+    <footer>
+        <p><span style="font-family: 'Amsterdam Three';" id="company" class="hidden"
+                data-animation="unblur">Devigns</span> &copy;<span id="year"></span>.
+            All rights
+            reserved.</p>
+        <p id="legal">
+            <a href="/terms-and-conditions.html" target="_blank">Terms & Conditions </a> |
+            <a href="/privacy-policy.html" target="_blank">Privacy Policy</a>
+        </p>
+
+    </footer>
+
+
+
+    <!-- </div> -->
+
+    <script defer src="script.js"></script>
+    <script defer src="index.js"></script>
+
+
+
+</body>
+
+</html>

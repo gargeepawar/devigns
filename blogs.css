@@ -1,0 +1,524 @@
+
+
+#blogPage, .sidebar, #searchInput{
+    font-family: "Montserrat", sans-serif;
+}
+
+#blogPage{
+    position: relative;
+    min-height: 100vh;
+    height: auto;
+    overflow-y: auto; 
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #fce7e4;
+    padding: 3rem 2rem;
+    border-right: 2px solid #ddd;
+    position: fixed;
+    /* left: -25%; */
+    top: 12vh; 
+    bottom: 0;
+    overflow-y: auto !important; 
+    height: 88vh;
+    font-weight: 550;
+    z-index: 2;
+}
+
+/* Sidebar transition */
+.sidebar {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.sidebar.hidden {
+    opacity: 0; /* Fade out */
+    transform: translateX(-100%); /* Slide it off-screen */
+    pointer-events: none; /* Prevent interaction when hidden */
+}
+
+
+
+.blogs-menu-btn {
+    display: none;
+}
+.blogs-menu-btn i{
+    cursor: pointer;
+    
+}
+
+
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    /* Adjust as needed */
+    margin: 2rem 0;
+
+}
+
+.search-container input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-container input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.search-container i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-container i:hover {
+    color: #007bff;
+}
+
+.highlight {
+    background-color: rgba(173, 216, 230, 0.884);
+    color: #000000;
+    font-weight: 600;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+
+/* Custom Font */
+@font-face {
+    font-family: 'Amsterdam Three';
+    src: url('/amsterdam-signature-three.ttf') format('woff2'),
+        /* Modern Browsers */
+        url('/amsterdam-signature-three.ttf') format('woff');
+    /* Legacy Browsers */
+}
+
+
+.sidebar h2 {
+    font-family: 'Amsterdam Three';
+    font-size: 5rem;
+    font-weight: 300;
+    padding: 2rem 2rem;
+    text-align: center;
+    white-space: nowrap;
+
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 1rem;
+    margin: .5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2 ease-in-out;
+    font-size: 1.8rem;
+    font-weight: 600;
+
+}
+
+.sidebar li span {
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    overflow: hidden;
+    /* Hide overflowed text */
+    text-overflow: ellipsis;
+    /* Show ellipsis (...) */
+}
+
+
+.sidebar li:hover {
+    background-color: rgb(230, 225, 225)
+}
+
+.sidebar li.active {
+    background-color: #b44e5b;
+    color: white;
+}
+
+.content {
+    width: 75%;
+    margin-left: 25%;
+    padding: 5rem;
+    /* padding: 5rem 20%; */
+    min-height: 100%;
+    padding-top: 12vh; /*because header is taking 12vh height space*/ 
+    padding-bottom: 12vh;
+    /* overflow: hidden; */
+    position: relative;
+    background-color: #ffffff;
+}
+
+
+
+
+#blogContent{
+    font-weight: 550;
+    font-size: 2rem;
+}
+
+#blogContent h6 {
+    font-size: 2rem;
+margin-top: 2rem;
+}
+
+#blogContent ul{
+        font-size: 1.8rem;
+        padding-left: 2rem;
+}
+
+
+
+
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+    background-color: #e6e4e4c5;
+    height: 5rem;
+    padding: 0 4rem;
+    width: 100%;
+}
+
+
+
+.blog-date {
+    font-size: 1.4rem;
+    color: #00000096;
+    font-weight: 550;
+}
+
+.blog-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.blog-icons i {
+    cursor: pointer;
+    font-size: 2.8rem;
+}
+
+#blogTitle{
+    text-align: center;
+    line-height: normal;
+    font-size: 3.5rem;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    }
+
+
+.blog-image {
+    max-width: 100%;
+    max-height: 70vh;
+    width: auto;
+    height: auto;
+    margin: 1rem auto;
+    display: block;
+    pointer-events: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.blog-sidebar-image {
+    width: 4rem;
+    /* Fixed width */
+    height: 4rem;
+    /* Fixed height to maintain square aspect ratio */
+    object-fit: cover;
+    /* Ensures the center of the image is displayed */
+    border-radius: 5px;
+    /* Optional rounded corners */
+    pointer-events: none;
+
+
+}
+
+
+.word {
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    padding: 2px 4px;
+}
+
+.blog-author {
+    font-size: 4rem;
+    font-weight:550;
+    color: #0c0c0c;
+    font-family: 'Amsterdam Three';
+}
+
+
+.toast {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    display: none;
+    /* Initially hidden */
+    width: 22rem;
+    text-align: center;
+}
+
+.toast.show {
+    display: block;
+    /* Show when active */
+    animation: fadeInOut 2s ease-in-out;
+    /* Smooth animation */
+}
+
+
+
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:768px) and (max-width: 1200px) {
+    .sidebar{
+        width: 25%;
+        padding: 3rem 1rem;
+    }
+    .sidebar h2 {
+        font-size:4rem;
+    
+        
+    }
+
+    .sidebar li {
+        padding:.5rem;
+        margin: .5rem;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: all 0.2 ease-in-out;
+        font-size: 1.6rem;
+    }
+   
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    
+
+
+    .blogs-menu-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        padding: 5px 0;
+        border-radius: 5px;
+        cursor: pointer;
+        /* z-index: 3; */
+        /* position: absolute;
+        left: 1rem; */
+    }
+    .blog-date {
+        /* margin-left: 2rem; */
+    }
+
+
+
+    .sidebar {
+        width: 250px;
+
+        height: 88vh;
+        position: fixed;
+        top: 12vh;
+        bottom: 0;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+    }
+
+    .sidebar.show {
+        transform: translateX(0);
+        /* Slide in */
+    }
+
+
+
+
+    .blogs-menu-btn i {
+        font-size: 1.8rem;
+        line-height: normal;
+    }
+
+    .content {
+        padding: .5rem 2rem;
+        width: 100%;
+        margin-left: 0; /* Content remains untouched */
+        min-height: 100%;
+        height: auto;
+        overflow-y: auto;
+        padding-top: 12vh; /*because header is taking 12vh height space*/ 
+        padding-bottom: 12vh;
+
+    }
+    
+    #blogContent{
+            font-weight: 500;
+            font-size: 1.8rem;
+        }
+        #blogContent h6 {
+            font-size: 1.8rem;
+        }
+
+        #blogContent ul{
+            font-size: 1.6rem;
+    }
+        #blogTitle {
+            line-height: normal;
+            font-size: 3rem;
+            padding: 1rem 0.5rem 1rem 0.5rem;
+        }
+        .blog-author {
+            font-size: 3rem;
+        }
+        #blogContent{
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        #blogTitle, .blog-author{
+            padding-left: 2rem;
+            padding-right: 1.5rem;
+        }
+        #authlabel{
+            padding-left: 2rem;
+        }
+        .sidebar li {
+            font-weight: 650;
+            padding-bottom: .7rem;
+    padding-top: .7rem;
+        }
+
+        .blog-sidebar-image {
+            width: 3rem;
+            height: 3rem;
+        }
+
+}
+
+
+
+
+@media (max-width: 480px) {
+    .blog-header{
+        padding: 0 2rem;
+    }
+    .blog-date {
+        font-size: 1.2rem;
+    }
+    
+    .blog-icons {
+        display: flex;
+        gap: 1.5rem;
+    }
+    
+    .blog-icons i {
+        cursor: pointer;
+        font-size: 2.2rem;
+    }
+    .blogs-menu-btn i {
+        font-size: 1.6rem;
+    }
+    
+
+     #blogContent{
+        font-weight: 500;
+        font-size: 1.6rem;
+    }
+    #blogContent h6 {
+        font-size: 1.6rem;
+    }
+    #blogContent ul{
+        font-size: 1.55rem;
+}
+    #blogTitle {
+        line-height: normal;
+        font-size: 2.5rem;
+        padding: 1rem 0.5rem 0rem 0.5rem;
+
+    }
+    .blog-author {
+        font-size: 2rem;
+    }
+    .content {
+        padding-bottom: 5vh;
+    }
+     #blogContent{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    #blogTitle, .blog-author{
+        padding-left: 2rem;
+        padding-right: 1.5rem;
+    }
+    #authlabel{
+        padding-left: 2rem;
+    }
+
+
+
+    .sidebar {
+        padding: 2rem 1rem;   
+    }
+    .sidebar h2 {
+    font-size: 3.3rem;
+    }
+    
+    .sidebar li {
+    font-size: 1.5rem;
+    }
+    .blog-sidebar-image {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+}

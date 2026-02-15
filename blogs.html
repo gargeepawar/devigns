@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devigns Blog | Web Design, UI/UX, Branding & Development Insights</title>
+
+    <meta name="description"
+        content="Explore the Devigns blog for expert insights on web design, UI/UX, branding, and development. Stay updated with the latest trends, tips, and insights to build a strong online presence. Learn how great design can grow your business.">
+
+    <link rel="stylesheet" href="blogs.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Smooth scrollbar library -->
+    <!-- <script src="https://unpkg.com/smooth-scrollbar/dist/smooth-scrollbar.js"></script> -->
+
+    <link rel="canonical" href="https://www.devigns.in/blogs.html">
+    <link rel="apple-touch-icon" sizes="144x144" href="./Assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon-16x16.png">
+
+    <!-- Open Graph tags for social media sharing -->
+    <meta property="og:title" content="Devigns - Design, Development, Branding & Digital Trends">
+    <meta property="og:description"
+        content="Insights, inspiration, and innovation. Explore expert takes on design, branding, web development, and digital creativity. Stay ahead of the trends with Devigns.">
+    <meta property="og:image" content="https://www.devigns.in/Assets/ogImage.png">
+    <meta property="og:url" content="https://www.devigns.in/blogs.html">
+
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+
+     <!-- Modal -->
+     <div class="menu-modal hidden" id="menu-modal" style="display: none;" data-animation="fadeIn">
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/aboutus.html">ABOUT US</a></li>
+            <li><a href="/blogs.html">BLOGS</a></li>
+            <li><a href="/services.html">SERVICES</a></li>
+            <li><a href="/contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+
+
+
+    <header>
+
+        <nav class="hidden" data-animation="fadeIn">
+            <div class="menu-toggle hidden" id="menu-toggle" data-animation="slideMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+                <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/aboutus.html">About us</a></li>
+            <li><a href="/blogs.html">Blogs</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li style="border: none;"><a href="/contact.html">Contact</a></li>
+        </ul>
+        </nav>
+
+        <div class="header-right">
+            <a href="/contact.html"><button class="hidden bubble-btn" data-animation="fadeIn">Let's Create ✦<div class="bubble-overlay"></div>
+            </button></a>
+            <a href="/">
+                <img src="./Assets/headerIcon.png" alt="Devigns Icon" loading="lazy">
+              </a>
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <h2>Blogs</h2>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search blogs..." />
+            <i class="fas fa-search"></i>
+        </div>
+        <ul id="blogList"></ul>
+
+    </aside>
+
+
+    <!-- <div id="scroll-container" data-scrollbar> -->
+
+
+    <section id="blogPage" data-scroll-section>
+
+        <main class="content">
+            <div class="blog-header">
+                <!-- Sidebar menu button -->
+                <div class="blogs-menu-btn"><i class="fas fa-arrow-right"></i></div>
+                <div class="blog-date" id="blogDate"></div>
+                <div class="blog-icons">
+                    <i class="fas fa-copy" id="copyLink" title="Copy Link"></i>
+                    <i class="fas fa-share-alt" title="Share"></i>
+                </div>
+            </div>
+            <img id="blogImage" src="" alt="Blog Image" class="blog-image" loading="lazy">
+            <h1 id="blogTitle" class="hidden" data-animation="unblur"></h1>
+            <div id="blogContent"></div>
+            <p style="margin: 1.5rem 0 .5rem 0;font-weight: bold;" id="authlabel">- Author- </p>
+            <div class="blog-author" id="blogAuthor"></div>
+        </main>
+
+    </section>
+
+
+    <section id="footerUpperHalf" data-scroll-section>
+
+        <div class="ocean">
+            <div class="wave"></div>
+        </div>
+
+        <div id="bigCircle">
+            <div id="smallCircle">
+                <p>Designed & Developed by</p>
+                <img src="./Assets/FooterLogo.png" alt="Devigns Official Logo"
+                    style="mix-blend-mode: multiply;width: 90%;" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section id="footerLowerHalf" data-scroll-section>
+        <h3>From <span id="Bharat" title="India">भारत</span> to the World.</h3>
+        <div class="heading-container">
+            <h1 class="DevignsInBG">DEVIGNS</h1>
+            <h2>A Call From Your Roots</h2>
+        </div>
+
+        <div class="social-bar" onclick="window.open('https://mail.google.com/mail/?view=cm&to=devignsofficial@gmail.com', '_blank')">
+            Let's Work Together! Drop us a mail.
+            <div class="icon">
+                    <i class="fas fa-envelope"></i>
+            </div>
+        </div>
+        <p>Will you pick it?</p>
+        <div class="callWhatsapp">
+            <a href="tel:+918329860385">
+                <i class="fas fa-phone" style="font-size: 2.3rem;"></i>
+            </a>
+
+            <a
+                href="https://wa.me/+918329860385?text=Hey!%20I%20just%20came%20across%20Devigns%20and%20love%20your%20work.%20I%E2%80%99m%20looking%20for%20Design%20%26%20Development%20services%20and%20would%20love%20to%20discuss%20how%20you%20can%20help!">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <div id="location">
+            <h5>Powered from Mumbai</h5>
+            <img src="./Assets/Vitthal.svg" alt="Lord Vitthal" loading="lazy">
+        </div>
+
+
+    </section>
+
+
+    <footer>
+        <p><span style="font-family: 'Amsterdam Three';" id="company" class="hidden"
+                data-animation="unblur">Devigns</span> &copy;<span id="year"></span>.
+            All rights
+            reserved.</p>
+            <p id="legal">
+                <a href="/terms-and-conditions.html" target="_blank">Terms & Conditions </a> |
+            <a href="/privacy-policy.html" target="_blank">Privacy Policy</a>  
+            </p>
+            
+    </footer>
+
+
+    <!-- </div> -->
+
+
+
+
+
+
+    <!-- Toast Message -->
+    <div id="copyToast" class="toast">Link copied to clipboard!</div>
+
+
+
+
+
+    <script>
+        const blogList = document.getElementById("blogList");
+        const blogTitle = document.getElementById("blogTitle");
+        const blogContent = document.getElementById("blogContent");
+
+        // Function to convert a blog title into a slug (SEO-friendly URL)
+        function generateSlug(title) {
+            return title
+                .toLowerCase()
+                .trim()
+                .replace(/[^a-z0-9\s-]/g, "") // Remove special characters
+                .replace(/\s+/g, "-"); // Replace spaces with hyphens
+        }
+
+        // Function to load a blog based on its slug
+        function loadBlog(blogSlug, addToHistory = true) {
+            let blog = blogs.find(b => generateSlug(b.title) === blogSlug);
+
+            if (!blog) {
+                console.warn("Invalid blog slug:", blogSlug);
+                // Fallback: Load the first blog using ID
+                blog = blogs.length > 0 ? blogs[0] : null;
+            }
+
+            if (blog) {
+                // Set blog details
+                document.getElementById("blogDate").textContent = blog.date;
+                document.getElementById("blogImage").src = blog.image;
+                document.getElementById("blogImage").alt = blog.title;
+                blogTitle.textContent = blog.title;
+                blogContent.innerHTML = blog.content;
+                document.getElementById("blogAuthor").textContent = blog.author;
+
+                // Highlight active blog in sidebar
+                document.querySelectorAll(".sidebar li").forEach(item => item.classList.remove("active"));
+                const activeItem = document.querySelector(`[data-slug="${generateSlug(blog.title)}"]`);
+                if (activeItem) activeItem.classList.add("active");
+
+                // Update URL with query parameter (only if valid slug was given)
+                if (addToHistory) {
+                    history.pushState({ blogSlug }, "", `blogs.html?slug=${blogSlug}`);
+                }
+                // ✅ Scroll to top of the page
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+
+            } else {
+                console.error("No blogs found in JSON.");
+            }
+        }
+
+        // Fetch blogs from JSON
+        let blogs = [];
+        fetch('/Cdn/blogs.json')
+            .then(response => response.json())
+            .then(data => {
+                // Separate the blog with ID = 1
+                const fixedBlog = data.find(blog => blog.id === 1);
+                let otherBlogs = data.filter(blog => blog.id !== 1);
+
+                // Sort the remaining blogs in descending order of ID
+                otherBlogs.sort((a, b) => b.id - a.id);
+
+                // Combine fixed blog at the top + sorted blogs
+                blogs = fixedBlog ? [fixedBlog, ...otherBlogs] : otherBlogs;
+                // Populate the sidebar
+                blogs.forEach(blog => {
+                    const slug = generateSlug(blog.title);
+
+                    // ✅ Prevent duplicate blogs
+                    if (document.querySelector(`li[data-slug="${slug}"]`)) {
+                        console.warn(`Skipping duplicate blog: ${blog.title}`);
+                        return;
+                    }
+
+                    const li = document.createElement("li");
+                    li.setAttribute("data-slug", slug);
+                    li.setAttribute("title", blog.title);
+                    li.style.display = "flex";
+                    li.style.alignItems = "center";
+                    li.style.gap = "10px";
+
+                    // Blog image
+                    const img = document.createElement("img");
+                    img.src = blog.image;
+                    img.alt = blog.title;
+                    img.classList.add("blog-sidebar-image");
+
+                    // Blog title text
+                    const span = document.createElement("span");
+                    span.textContent = blog.title;
+
+
+                    // Append elements
+                    li.appendChild(img);
+                    li.appendChild(span);
+
+                    // Click event to load blog
+                    li.onclick = function () {
+                        loadBlog(slug);
+                        closeSidebar();
+                        // window.location.href = `?slug=${slug}`;
+
+                    };
+
+                    blogList.appendChild(li);
+                });
+
+                // Extract slug from URL
+                const urlParams = new URLSearchParams(window.location.search);
+                let blogSlug = urlParams.get("slug"); // Get slug from URL
+
+                // always load blog with id=1 if not found, load the first blog from the sidebar
+                if (!blogSlug) {
+                    console.log("No slug provided. Loading blog with id = 1.");
+                    const blogWithIdOne = blogs.find(blog => blog.id === 1);
+
+                    if (blogWithIdOne) {
+                        loadBlog(generateSlug(blogWithIdOne.title));
+                    } else {
+                        console.error("No blog found with id = 1. Loading first available blog.");
+                        loadBlog(generateSlug(blogs[0].title));
+                    }
+                    return;
+                }
+
+
+                // Check if slug exists in JSON
+                const validBlog = blogs.find(blog => generateSlug(blog.title) === blogSlug);
+
+                if (!validBlog) {
+                    console.error("Invalid slug provided. Showing error message.");
+
+                    // Remove sidebar list items
+                    blogList.innerHTML = "";
+
+                    // Display error message in elements with class="content"
+                    document.querySelectorAll(".content").forEach(content => {
+                        content.innerHTML = `
+                    <div style="text-align: center; display:flex; flex-direction:column; justify-content:center; align-items:center; width:100%; height:100%;">
+                        <h2>404 - Blog Not Found</h2>
+                        <p>The blog you are looking for does not exist.</p>
+                        <a href="?slug=${generateSlug(blogs[0].title)}" 
+                            style="padding: 8px 15px; background: #b44e5b; color: #fff; text-decoration: none; border-radius: 5px;">
+                            Explore our Blogs
+                        </a>
+                    </div>
+                `;
+                    });
+                    return;
+                }
+
+                // Load valid blog
+                loadBlog(blogSlug);
+            })
+            .catch(error => {
+                console.error('Error fetching blog data:', error);
+
+                // Display user-friendly error message in elements with class="content"
+                document.querySelectorAll(".content").forEach(content => {
+                    content.innerHTML = `
+                <div style="text-align: center; display:flex; flex-direction:column; justify-content:center; align-items:center; width:100%; height:100%;">
+                    <h2>Oops! Something went wrong.</h2>
+                    <p>We were unable to load the blogs. Please check your internet connection and try again.</p>
+                    <button onclick="location.reload()" style="padding: 5px 10px; background: #b44e5b; color: #fff; border: none; cursor: pointer; border-radius: 5px;">
+                        Retry
+                    </button>
+                </div>
+            `;
+                });
+            });
+
+        // Handle back/forward navigation
+        window.onpopstate = function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            let blogSlug = urlParams.get("slug");
+
+            const validBlog = blogs.find(blog => generateSlug(blog.title) === blogSlug);
+
+            if (!validBlog) {
+                console.warn("Invalid slug in URL during navigation. Showing error message.");
+
+                // Remove sidebar list items
+                document.querySelector("#blogList").innerHTML = "";
+
+
+                document.querySelectorAll(".content").forEach(content => {
+                    content.innerHTML = `
+                <div style="text-align: center; display:flex; flex-direction:column; justify-content:center; align-items:center; width:100%; height:100%;">
+                    <h2>404 - Blog Not Found</h2>
+                    <p>The blog you are looking for does not exist.</p>
+                    <a href="?slug=${generateSlug(blogs[0].title)}" 
+                        style="padding: 8px 15px; background: #b44e5b; color: #fff; text-decoration: none; border-radius: 5px;">
+                        Explore our Blogs
+                    </a>
+                </div>
+            `;
+                });
+                return;
+            }
+
+            loadBlog(blogSlug);
+            closeSidebar();
+        };
+
+
+
+
+        document.querySelector(".blogs-menu-btn").addEventListener("click", function () {
+            const sidebar = document.querySelector(".sidebar");
+            const icon = this.querySelector("i");
+
+            sidebar.classList.toggle("show");
+
+            // Toggle icons
+            if (sidebar.classList.contains("show")) {
+                icon.classList.remove("fa-arrow-right");
+                icon.classList.add("fa-arrow-left");
+            } else {
+                icon.classList.remove("fa-arrow-left");
+                icon.classList.add("fa-arrow-right");
+            }
+
+            // Ensure consistent font size
+            icon.style.fontSize = "1.8rem";
+        });
+
+        // Function to close sidebar on mobile
+        function closeSidebar() {
+            const sidebar = document.querySelector(".sidebar");
+            const menuIcon = document.querySelector(".blogs-menu-btn i");
+
+            if (window.innerWidth <= 768 && sidebar.classList.contains("show")) {
+                sidebar.classList.remove("show");
+                menuIcon.classList.remove("fa-arrow-left");
+                menuIcon.classList.add("fa-arrow-right");
+            }
+        }
+
+        window.addEventListener("resize", function () {
+            if (window.innerWidth > 768) closeSidebar();
+        });
+
+
+        // Close sidebar when clicking outside it (on mobile)
+        document.addEventListener("click", function (event) {
+            const sidebar = document.querySelector(".sidebar");
+            const menuBtn = document.querySelector(".blogs-menu-btn");
+
+            if (window.innerWidth <= 768 && sidebar.classList.contains("show")) {
+                if (!sidebar.contains(event.target) && !menuBtn.contains(event.target)) {
+                    closeSidebar();
+                }
+            }
+        });
+
+        // Attach closeSidebar() to each blog item click
+        document.querySelectorAll(".sidebar li").forEach(item => {
+            item.addEventListener("click", closeSidebar);
+        });
+
+    </script>
+
+
+
+    <script>
+        document.getElementById("copyLink").addEventListener("click", function () {
+            const url = window.location.href;
+
+            navigator.clipboard.writeText(url).then(() => {
+                if (window.innerWidth > 768) { // Show toast only on larger screens
+                    showToast("Link copied to clipboard!");
+                }
+            }).catch(err => {
+                console.error("Failed to copy link: ", err);
+            });
+        });
+
+        document.querySelector(".fa-share-alt").addEventListener("click", function () {
+            const shareData = {
+                title: document.getElementById("blogTitle").textContent,
+                text: `Check out this blog | Devigns!`,
+                url: window.location.href
+            };
+
+            if (navigator.share) {
+                // Use Web Share API on supported devices
+                navigator.share(shareData).catch(err => {
+                    console.error("Error sharing:", err);
+                });
+            } else {
+                // Fallback: Copy the link and show toast (only on desktop)
+                navigator.clipboard.writeText(shareData.url).then(() => {
+                    showToast("Link copied to clipboard!");
+                }).catch(err => {
+                    console.error("Failed to copy link: ", err);
+                });
+            }
+        });
+
+        function showToast(message) {
+            const toast = document.getElementById("copyToast");
+            toast.textContent = message;
+            toast.style.display = "block"; // Show toast
+
+            setTimeout(() => {
+                toast.style.display = "none"; // Hide after 2 seconds
+            }, 2000);
+        }
+    </script>
+
+    <script>
+        document.getElementById("searchInput").addEventListener("input", function () {
+            const query = this.value.toLowerCase();
+
+            document.querySelectorAll("#blogList li").forEach(item => {
+                const textElement = item.querySelector("span"); // Get the title span
+                const text = textElement.textContent;
+                const lowerText = text.toLowerCase();
+
+                if (query && lowerText.includes(query)) {
+                    // Highlight the matching part
+                    const regex = new RegExp(`(${query})`, "gi");
+                    const highlightedText = text.replace(regex, `<span class="highlight">$1</span>`);
+                    textElement.innerHTML = highlightedText;
+                    item.style.display = "flex"; // Keep visible
+                } else {
+                    // Remove highlight if not matching
+                    textElement.innerHTML = text;
+                    item.style.display = query ? "none" : "flex";
+                }
+            });
+        });
+
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sidebar = document.querySelector(".sidebar");
+            const footerSections = document.querySelectorAll("#footerUpperHalf, #footerLowerHalf, footer");
+
+            if (!sidebar || footerSections.length === 0) return;
+
+            function hideSidebar() {
+                sidebar.classList.add("hidden");
+            }
+
+            function showSidebar() {
+                sidebar.classList.remove("hidden");
+            }
+
+            function enableSidebarToggle() {
+                footerSections.forEach(section => {
+                    section.addEventListener("mouseenter", hideSidebar);
+                    section.addEventListener("mouseleave", showSidebar);
+                });
+            }
+
+            function disableSidebarToggle() {
+                footerSections.forEach(section => {
+                    section.removeEventListener("mouseenter", hideSidebar);
+                    section.removeEventListener("mouseleave", showSidebar);
+                });
+                sidebar.classList.remove("hidden"); // Ensure sidebar remains visible on small screens
+            }
+
+            function checkScreenSize() {
+                if (window.innerWidth > 768) {
+                    enableSidebarToggle();
+                } else {
+                    disableSidebarToggle();
+                }
+            }
+
+            window.addEventListener("resize", checkScreenSize);
+            checkScreenSize(); // Initial check on page load
+        });
+
+
+    </script>
+
+
+    <script defer src="script.js"></script>
+</body>
+
+</html>

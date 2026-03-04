@@ -371,7 +371,7 @@ section {
 }
 
 .unblurRepeat {
-    animation: unblurRepeat 8s ease-in-out infinite alternate;
+    animation: unblurRepeat 5s ease-in-out infinite alternate;
     opacity: 0;
 }
 
@@ -2123,4 +2123,5 @@ footer a:hover {
         padding: 1.2rem 4rem;
         font-size: 1.5rem;
     }
+
 }

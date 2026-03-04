@@ -371,7 +371,7 @@ section {
 }
 
 .unblurRepeat {
-    animation: unblurRepeat 3s ease-in-out infinite alternate;
+    animation: unblurRepeat 2s ease-in forwards;
     opacity: 0;
 }
 
@@ -2125,4 +2125,5 @@ footer a:hover {
     }
 
 }
+
 

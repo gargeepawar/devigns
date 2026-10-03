@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Devigns | Creative Agency for Design & Development Solutions | India</title>
+
+
+    <meta name="description"
+        content="Devigns is a top-rated creative agency offering premium design and development solutions to help grow your brand with world-class digital experiences and innovative strategies.">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Smooth scrollbar library -->
+    <!-- <script src="https://unpkg.com/smooth-scrollbar/dist/smooth-scrollbar.js"></script> -->
+
+    <link rel="canonical" href="https://www.devigns.in/shop.html">
+    <link rel="apple-touch-icon" sizes="144x144" href="./Assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon-16x16.png">
+
+    <!-- Open Graph tags for social media sharing -->
+    <meta property="og:title" content="Shop Devigns - Creativity Rooted in Culture">
+    <meta property="og:description"
+        content="Devigns is a Mumbai-based design & development agency bringing Indian culture to the world through premium web design, UI/UX, and branding. From Bharat to the world, we craft digital experiences with soul.">
+    <meta property="og:image" content="https://www.devigns.in/Assets/ogImage.png">
+    <meta property="og:url" content="https://www.devigns.in/shop.html">
+
+</head>
+
+<body class="min-h-screen flex flex-col selection:bg-rose-200 selection:text-rose-900">
+
+    <!-- NAVIGATION BAR -->
+    <header class="sticky top-0 z-40 bg-[#FAF6F0]/90 backdrop-blur-md border-b border-[#E8DFD5]">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand Logo / Name -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-full border border-[#D5C7B8] flex items-center justify-center bg-white shadow-sm group-hover:border-rose-400 transition">
+                    <span class="font-serif font-bold text-lg text-rose-700">D</span>
+                </div>
+                <span class="font-serif text-xl tracking-wide font-semibold text-[#2D2420]">Devigns</span>
+            </a>
+
+            <!-- Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-[#5A4E46]">
+                <a href="index.html" class="hover:text-rose-700 transition">Home</a>
+                <a href="about.html" class="hover:text-rose-700 transition">About us</a>
+                <a href="blogs.html" class="hover:text-rose-700 transition">Blogs</a>
+                <a href="services.html" class="hover:text-rose-700 transition">Services</a>
+                <a href="shop.html" class="text-rose-700 font-semibold border-b border-rose-700 pb-0.5">Shop</a>
+                <a href="contact.html" class="hover:text-rose-700 transition">Contact</a>
+            </nav>
+
+            <!-- Actions (Cart & CTA) -->
+            <div class="flex items-center space-x-4">
+                <button onclick="toggleCart()" class="relative p-2 rounded-full border border-[#D5C7B8] hover:border-rose-600 bg-white shadow-sm transition">
+                    <svg class="w-5 h-5 text-[#2D2420]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                    </svg>
+                    <span id="cart-badge" class="absolute -top-1 -right-1 bg-rose-600 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">0</span>
+                </button>
+                <a href="contact.html" class="hidden sm:inline-flex items-center px-6 py-2.5 rounded-full border border-[#2D2420] text-sm font-medium hover:bg-[#2D2420] hover:text-white transition duration-300">
+                    Let's Create ✦
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="max-w-7xl mx-auto px-6 pt-16 pb-12 text-center">
+        <span class="text-xs uppercase tracking-[0.25em] text-rose-700 font-semibold mb-3 block">Digital Marketplace</span>
+        <h1 class="font-serif text-4xl md:text-6xl text-[#2D2420] max-w-3xl mx-auto leading-tight mb-4">
+            Curated Themes & Web Design Ideas
+        </h1>
+        <p class="text-[#6E6058] max-w-xl mx-auto text-base">
+            Explore premium Shopify themes, UI/UX templates, and aesthetic wireframe concepts built to convert visitors and tell your brand's unique story.
+        </p>
+    </section>
+
+    <!-- FILTER & SEARCH BAR -->
+    <div class="max-w-7xl mx-auto px-6 mb-12">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4 bg-white p-4 rounded-2xl border border-[#E8DFD5] shadow-sm">
+            <!-- Categories -->
+            <div class="flex flex-wrap gap-2 w-full md:w-auto" id="filter-buttons">
+                <button onclick="filterProducts('all')" class="px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase bg-[#2D2420] text-white transition active-filter">All Items</button>
+                <button onclick="filterProducts('Shopify')" class="px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase bg-[#FAF6F0] text-[#5A4E46] hover:bg-[#E8DFD5] transition">Shopify Themes</button>
+                <button onclick="filterProducts('UI/UX')" class="px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase bg-[#FAF6F0] text-[#5A4E46] hover:bg-[#E8DFD5] transition">UI/UX Kits</button>
+                <button onclick="filterProducts('Wireframe')" class="px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase bg-[#FAF6F0] text-[#5A4E46] hover:bg-[#E8DFD5] transition">Design Ideas</button>
+            </div>
+            <!-- Search input -->
+            <div class="relative w-full md:w-72">
+                <input type="text" id="search-input" oninput="searchProducts()" placeholder="Search themes & ideas..." class="w-full bg-[#FAF6F0] border border-[#E8DFD5] rounded-full px-4 py-2 text-sm text-[#2D2420] focus:outline-none focus:border-rose-600">
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCT GALLERY GRID -->
+    <main class="max-w-7xl mx-auto px-6 flex-grow pb-24 w-full">
+        <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Product cards rendered dynamically or statically -->
+            <!-- Card 1 -->
+            <div class="product-card bg-white rounded-2xl overflow-hidden border border-[#E8DFD5] shadow-sm hover:shadow-md transition duration-300 flex flex-col" data-category="Shopify" data-title="Aurelia Luxury Jewelry Shopify Theme">
+                <div class="relative h-64 bg-[#F3EDE4] overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80" alt="Aurelia Theme" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-[#2D2420] text-xs font-semibold px-3 py-1 rounded-full border border-[#E8DFD5]">Shopify Theme</span>
+                    <span class="absolute top-4 right-4 bg-rose-700 text-white text-xs font-semibold px-3 py-1 rounded-full">$129</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-serif text-xl font-semibold text-[#2D2420] mb-2">Aurelia Luxury Jewelry</h3>
+                    <p class="text-sm text-[#6E6058] mb-6 flex-grow">High-converting Shopify theme crafted specifically for high-end diamond and luxury jewelry stores.</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-[#F3EDE4]">
+                        <button onclick="openModal('Aurelia Luxury Jewelry', '$129', 'A high-converting, lightning-fast Shopify theme featuring immersive product galleries, trust badges, cart drawer customization, and advanced filtering built for high-ticket luxury items.')" class="text-xs font-bold uppercase tracking-wider text-rose-700 hover:underline">Quick View</button>
+                        <button onclick="addToCart('Aurelia Luxury Jewelry', 129)" class="bg-[#2D2420] text-white text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full hover:bg-rose-700 transition">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="product-card bg-white rounded-2xl overflow-hidden border border-[#E8DFD5] shadow-sm hover:shadow-md transition duration-300 flex flex-col" data-category="UI/UX" data-title="Lumière Brand UI Kit & Figma System">
+                <div class="relative h-64 bg-[#F3EDE4] overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" alt="Lumière UI Kit" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-[#2D2420] text-xs font-semibold px-3 py-1 rounded-full border border-[#E8DFD5]">UI/UX Kit</span>
+                    <span class="absolute top-4 right-4 bg-rose-700 text-white text-xs font-semibold px-3 py-1 rounded-full">$79</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-serif text-xl font-semibold text-[#2D2420] mb-2">Lumière Brand UI Kit</h3>
+                    <p class="text-sm text-[#6E6058] mb-6 flex-grow">Comprehensive Figma design system with reusable components, style guides, and responsive layout grids.</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-[#F3EDE4]">
+                        <button onclick="openModal('Lumière Brand UI Kit', '$79', 'Complete Figma design system tailored for branding agencies and creative studios. Includes 150+ components, typography scales, token variables, and responsive variants.')" class="text-xs font-bold uppercase tracking-wider text-rose-700 hover:underline">Quick View</button>
+                        <button onclick="addToCart('Lumière Brand UI Kit', 79)" class="bg-[#2D2420] text-white text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full hover:bg-rose-700 transition">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="product-card bg-white rounded-2xl overflow-hidden border border-[#E8DFD5] shadow-sm hover:shadow-md transition duration-300 flex flex-col" data-category="Wireframe" data-title="Veda Minimalist Architecture & Portfolio Concept">
+                <div class="relative h-64 bg-[#F3EDE4] overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Veda Portfolio" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-[#2D2420] text-xs font-semibold px-3 py-1 rounded-full border border-[#E8DFD5]">Design Idea</span>
+                    <span class="absolute top-4 right-4 bg-rose-700 text-white text-xs font-semibold px-3 py-1 rounded-full">$49</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-serif text-xl font-semibold text-[#2D2420] mb-2">Veda Portfolio Concept</h3>
+                    <p class="text-sm text-[#6E6058] mb-6 flex-grow">An editorial, asymmetry-focused design idea and wireframe concept for creative portfolios and boutique agencies.</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-[#F3EDE4]">
+                        <button onclick="openModal('Veda Portfolio Concept', '$49', 'An inspiring web design wireframe concept featuring grid-breaking layouts, smooth horizontal scrolling sections, and bold serif editorial typography.')" class="text-xs font-bold uppercase tracking-wider text-rose-700 hover:underline">Quick View</button>
+                        <button onclick="addToCart('Veda Portfolio Concept', 49)" class="bg-[#2D2420] text-white text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full hover:bg-rose-700 transition">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-[#E8DFD5] py-12 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full border border-[#D5C7B8] flex items-center justify-center bg-[#FAF6F0]">
+                    <span class="font-serif font-bold text-sm text-rose-700">D</span>
+                </div>
+                <span class="font-serif font-medium text-[#2D2420]">Devigns — From भारत to the World.</span>
+            </div>
+            <p class="text-xs text-[#6E6058]">Devigns © 2026. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- CART SIDEBAR DRAWER -->
+    <div id="cart-drawer" class="fixed inset-0 z-50 overflow-hidden hidden">
+        <div class="absolute inset-0 bg-black/30 backdrop-blur-sm transition-opacity" onclick="toggleCart()"></div>
+        <div class="absolute inset-y-0 right-0 max-w-full flex pl-10">
+            <div class="w-screen max-w-md bg-[#FAF6F0] shadow-2xl flex flex-col border-l border-[#E8DFD5]">
+                <div class="p-6 flex items-center justify-between border-b border-[#E8DFD5] bg-white">
+                    <h2 class="font-serif text-xl font-semibold text-[#2D2420]">Your Cart</h2>
+                    <button onclick="toggleCart()" class="p-2 text-[#6E6058] hover:text-[#2D2420]">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                    </button>
+                </div>
+                <div id="cart-items" class="p-6 flex-grow overflow-y-auto space-y-4">
+                    <p class="text-sm text-[#6E6058] text-center py-12">Your cart is currently empty.</p>
+                </div>
+                <div class="p-6 border-t border-[#E8DFD5] bg-white">
+                    <div class="flex justify-between font-serif font-semibold text-lg mb-4 text-[#2D2420]">
+                        <span>Subtotal</span>
+                        <span id="cart-subtotal">$0</span>
+                    </div>
+                    <button onclick="alert('Proceeding to secure checkout...')" class="w-full bg-[#2D2420] text-white py-3.5 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-rose-700 transition">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCT QUICK VIEW MODAL -->
+    <div id="product-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
+        <div class="absolute inset-0 bg-black/40 backdrop-blur-sm" onclick="closeModal()"></div>
+        <div class="relative bg-white rounded-3xl max-w-lg w-full p-8 border border-[#E8DFD5] shadow-2xl z-10">
+            <button onclick="closeModal()" class="absolute top-6 right-6 text-[#6E6058] hover:text-[#2D2420]">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+            <span id="modal-category" class="text-xs font-bold tracking-wider uppercase text-rose-700 mb-2 block">Theme Preview</span>
+            <h2 id="modal-title" class="font-serif text-2xl font-semibold text-[#2D2420] mb-3">Product Name</h2>
+            <div id="modal-price" class="text-xl font-bold text-rose-700 mb-4">$0</div>
+            <p id="modal-desc" class="text-sm text-[#6E6058] mb-8 leading-relaxed">Detailed product specifications and features overview.</p>
+            <button id="modal-add-btn" class="w-full bg-[#2D2420] text-white py-3 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-rose-700 transition">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        let cart = [];
+
+        function toggleCart() {
+            const drawer = document.getElementById('cart-drawer');
+            drawer.classList.toggle('hidden');
+        }
+
+        function addToCart(name, price) {
+            cart.push({ name, price });
+            updateCartUI();
+            toggleCart();
+        }
+
+        function updateCartUI() {
+            const badge = document.getElementById('cart-badge');
+            const itemsContainer = document.getElementById('cart-items');
+            const subtotalEl = document.getElementById('cart-subtotal');
+            
+            badge.innerText = cart.length;
+
+            if (cart.length === 0) {
+                itemsContainer.innerHTML = '<p class="text-sm text-[#6E6058] text-center py-12">Your cart is currently empty.</p>';
+                subtotalEl.innerText = '$0';
+                return;
+            }
+
+            let subtotal = 0;
+            itemsContainer.innerHTML = '';
+            cart.forEach((item, index) => {
+                subtotal += item.price;
+                itemsContainer.innerHTML += `
+                    <div class="flex items-center justify-between bg-[#FAF6F0] p-4 rounded-xl border border-[#E8DFD5]">
+                        <div>
+                            <h4 class="font-serif font-semibold text-sm text-[#2D2420]">${item.name}</h4>
+                            <p class="text-xs text-rose-700 font-semibold">$${item.price}</p>
+                        </div>
+                        <button onclick="removeFromCart(${index})" class="text-xs text-red-500 hover:underline">Remove</button>
+                    </div>
+                `;
+            });
+            subtotalEl.innerText = '$' + subtotal;
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCartUI();
+        }
+
+        function openModal(title, price, desc) {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-price').innerText = price;
+            document.getElementById('modal-desc').innerText = desc;
+            document.getElementById('modal-add-btn').onclick = function() {
+                addToCart(title, parseInt(price.replace('$', '')));
+                closeModal();
+            };
+            document.getElementById('product-modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('product-modal').classList.add('hidden');
+        }
+
+        function filterProducts(category) {
+            const cards = document.querySelectorAll('.product-card');
+            const buttons = document.querySelectorAll('#filter-buttons button');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-[#2D2420]', 'text-white');
+                btn.classList.add('bg-[#FAF6F0]', 'text-[#5A4E46]');
+            });
+            event.target.classList.remove('bg-[#FAF6F0]', 'text-[#5A4E46]');
+            event.target.classList.add('bg-[#2D2420]', 'text-white');
+
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function searchProducts() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const cards = document.querySelectorAll('.product-card');
+
+            cards.forEach(card => {
+                const title = card.getAttribute('data-title').toLowerCase();
+                if (title.includes(query)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+
+
+    <footer>
+        <p><span style="font-family: 'Amsterdam Three';" id="company" class="hidden"
+                data-animation="unblur">Devigns</span> &copy;<span id="year"></span>.
+            All rights
+            reserved.</p>
+        <p id="legal">
+            <a href="/terms-and-conditions.html" target="_blank">Terms & Conditions </a> |
+            <a href="/privacy-policy.html" target="_blank">Privacy Policy</a>
+        </p>
+
+    </footer>
+
+
+    <script defer src="script.js"></script>
+
+</body>
+
+</html>

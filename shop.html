@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop Devigns | Creative Agency for Design & Development Solutions | India</title>
 
-
     <meta name="description"
         content="Devigns is a top-rated creative agency offering premium design and development solutions to help grow your brand with world-class digital experiences and innovative strategies.">
 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-    <!-- Smooth scrollbar library -->
-    <!-- <script src="https://unpkg.com/smooth-scrollbar/dist/smooth-scrollbar.js"></script> -->
 
     <link rel="canonical" href="https://www.devigns.in/shop.html">
     <link rel="apple-touch-icon" sizes="144x144" href="./Assets/apple-touch-icon.png">
@@ -30,6 +28,16 @@
     <meta property="og:image" content="https://www.devigns.in/Assets/ogImage.png">
     <meta property="og:url" content="https://www.devigns.in/shop.html">
 
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FAF6F0;
+            color: #2D2420;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
 </head>
 
 <body class="min-h-screen flex flex-col selection:bg-rose-200 selection:text-rose-900">
@@ -57,11 +65,11 @@
 
             <!-- Actions (Cart & CTA) -->
             <div class="flex items-center space-x-4">
-                <button onclick="toggleCart()" class="relative p-2 rounded-full border border-[#D5C7B8] hover:border-rose-600 bg-white shadow-sm transition">
+                <button onclick="toggleCart()" class="relative p-2.5 rounded-full border border-[#D5C7B8] hover:border-rose-600 bg-white shadow-sm transition">
                     <svg class="w-5 h-5 text-[#2D2420]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
                     </svg>
-                    <span id="cart-badge" class="absolute -top-1 -right-1 bg-rose-600 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">0</span>
+                    <span id="cart-badge" class="absolute -top-1 -right-1 bg-rose-700 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">0</span>
                 </button>
                 <a href="contact.html" class="hidden sm:inline-flex items-center px-6 py-2.5 rounded-full border border-[#2D2420] text-sm font-medium hover:bg-[#2D2420] hover:text-white transition duration-300">
                     Let's Create ✦
@@ -71,13 +79,16 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section class="max-w-7xl mx-auto px-6 pt-16 pb-12 text-center">
-        <span class="text-xs uppercase tracking-[0.25em] text-rose-700 font-semibold mb-3 block">Digital Marketplace</span>
-        <h1 class="font-serif text-4xl md:text-6xl text-[#2D2420] max-w-3xl mx-auto leading-tight mb-4">
+    <section class="max-w-7xl mx-auto px-6 pt-20 pb-12 text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#F3EDE4] border border-[#E8DFD5] mb-4">
+            <span class="w-2 h-2 rounded-full bg-rose-700 animate-pulse"></span>
+            <span class="text-xs uppercase tracking-[0.2em] text-rose-900 font-bold">Digital Marketplace</span>
+        </div>
+        <h1 class="font-serif text-4xl md:text-6xl text-[#2D2420] max-w-3xl mx-auto leading-tight mb-5">
             Curated Themes & Web Design Ideas
         </h1>
-        <p class="text-[#6E6058] max-w-xl mx-auto text-base">
-            Explore premium Shopify themes, UI/UX templates, and aesthetic wireframe concepts built to convert visitors and tell your brand's unique story.
+        <p class="text-[#6E6058] max-w-xl mx-auto text-base leading-relaxed">
+            Explore high-end Shopify themes, UI/UX systems, and aesthetic wireframe concepts engineered to convert visitors and elevate your brand storytelling.
         </p>
     </section>
 
@@ -86,14 +97,17 @@
         <div class="flex flex-col md:flex-row items-center justify-between gap-4 bg-white p-4 rounded-2xl border border-[#E8DFD5] shadow-sm">
             <!-- Categories -->
             <div class="flex flex-wrap gap-2 w-full md:w-auto" id="filter-buttons">
-                <button onclick="filterProducts('all')" class="px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase bg-[#2D2420] text-white transition active-filter">All Items</button>
-                <button onclick="filterProducts('Shopify')" class="px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase bg-[#FAF6F0] text-[#5A4E46] hover:bg-[#E8DFD5] transition">Shopify Themes</button>
-                <button onclick="filterProducts('UI/UX')" class="px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase bg-[#FAF6F0] text-[#5A4E46] hover:bg-[#E8DFD5] transition">UI/UX Kits</button>
-                <button onclick="filterProducts('Wireframe')" class="px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase bg-[#FAF6F0] text-[#5A4E46] hover:bg-[#E8DFD5] transition">Design Ideas</button>
+                <button onclick="filterProducts('all')" class="px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-[#2D2420] text-white transition active-filter shadow-sm">All Items</button>
+                <button onclick="filterProducts('Shopify')" class="px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-[#FAF6F0] text-[#5A4E46] hover:bg-[#E8DFD5] transition">Shopify Themes</button>
+                <button onclick="filterProducts('UI/UX')" class="px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-[#FAF6F0] text-[#5A4E46] hover:bg-[#E8DFD5] transition">UI/UX Kits</button>
+                <button onclick="filterProducts('Wireframe')" class="px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-[#FAF6F0] text-[#5A4E46] hover:bg-[#E8DFD5] transition">Design Ideas</button>
             </div>
             <!-- Search input -->
-            <div class="relative w-full md:w-72">
-                <input type="text" id="search-input" oninput="searchProducts()" placeholder="Search themes & ideas..." class="w-full bg-[#FAF6F0] border border-[#E8DFD5] rounded-full px-4 py-2 text-sm text-[#2D2420] focus:outline-none focus:border-rose-600">
+            <div class="relative w-full md:w-80">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none text-[#8C7A6B]">
+                    <i class="fa-solid fa-magnifying-glass text-xs"></i>
+                </span>
+                <input type="text" id="search-input" oninput="searchProducts()" placeholder="Search luxury themes & ideas..." class="w-full bg-[#FAF6F0] border border-[#E8DFD5] rounded-full pl-10 pr-4 py-2.5 text-sm text-[#2D2420] focus:outline-none focus:border-rose-700 transition">
             </div>
         </div>
     </div>
@@ -101,81 +115,90 @@
     <!-- PRODUCT GALLERY GRID -->
     <main class="max-w-7xl mx-auto px-6 flex-grow pb-24 w-full">
         <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Product cards rendered dynamically or statically -->
+            
             <!-- Card 1 -->
-            <div class="product-card bg-white rounded-2xl overflow-hidden border border-[#E8DFD5] shadow-sm hover:shadow-md transition duration-300 flex flex-col" data-category="Shopify" data-title="Aurelia Luxury Jewelry Shopify Theme">
-                <div class="relative h-64 bg-[#F3EDE4] overflow-hidden group">
-                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80" alt="Aurelia Theme" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-[#2D2420] text-xs font-semibold px-3 py-1 rounded-full border border-[#E8DFD5]">Shopify Theme</span>
-                    <span class="absolute top-4 right-4 bg-rose-700 text-white text-xs font-semibold px-3 py-1 rounded-full">$129</span>
+            <div class="product-card bg-white rounded-3xl overflow-hidden border border-[#E8DFD5] shadow-sm hover:shadow-xl hover:border-rose-300 transition-all duration-500 flex flex-col group" data-category="Shopify" data-title="Aurelia Luxury Jewelry Shopify Theme">
+                <div class="relative h-72 bg-[#F3EDE4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80" alt="Aurelia Theme" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300"></div>
+                    <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md text-[#2D2420] text-[11px] font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-[#E8DFD5] shadow-sm">Shopify Theme</span>
+                    <span class="absolute top-4 right-4 bg-rose-700 text-white text-xs font-bold px-3.5 py-1.5 rounded-full shadow-md">$129</span>
                 </div>
-                <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="font-serif text-xl font-semibold text-[#2D2420] mb-2">Aurelia Luxury Jewelry</h3>
-                    <p class="text-sm text-[#6E6058] mb-6 flex-grow">High-converting Shopify theme crafted specifically for high-end diamond and luxury jewelry stores.</p>
+                <div class="p-7 flex flex-col flex-grow">
+                    <div class="flex items-center gap-1 text-amber-500 text-xs mb-2">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <span class="text-[#8C7A6B] ml-1">(48 reviews)</span>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold text-[#2D2420] mb-2 group-hover:text-rose-700 transition">Aurelia Luxury Jewelry</h3>
+                    <p class="text-sm text-[#6E6058] mb-6 flex-grow leading-relaxed">High-converting Shopify theme crafted specifically for high-end diamond and luxury jewelry boutiques.</p>
                     <div class="flex items-center justify-between pt-4 border-t border-[#F3EDE4]">
-                        <button onclick="openModal('Aurelia Luxury Jewelry', '$129', 'A high-converting, lightning-fast Shopify theme featuring immersive product galleries, trust badges, cart drawer customization, and advanced filtering built for high-ticket luxury items.')" class="text-xs font-bold uppercase tracking-wider text-rose-700 hover:underline">Quick View</button>
-                        <button onclick="addToCart('Aurelia Luxury Jewelry', 129)" class="bg-[#2D2420] text-white text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full hover:bg-rose-700 transition">Add to Cart</button>
+                        <button onclick="openModal('Aurelia Luxury Jewelry', '$129', 'A high-converting, lightning-fast Shopify theme featuring immersive product galleries, trust badges, cart drawer customization, and advanced filtering built for high-ticket luxury items.')" class="text-xs font-bold uppercase tracking-wider text-rose-700 hover:text-rose-900 transition flex items-center gap-1.5">
+                            Quick View <i class="fa-solid fa-arrow-right-long"></i>
+                        </button>
+                        <button onclick="addToCart('Aurelia Luxury Jewelry', 129)" class="bg-[#2D2420] text-white text-xs font-semibold uppercase tracking-wider px-5.5 py-3 rounded-full hover:bg-rose-700 transition shadow-sm">Add to Cart</button>
                     </div>
                 </div>
             </div>
 
             <!-- Card 2 -->
-            <div class="product-card bg-white rounded-2xl overflow-hidden border border-[#E8DFD5] shadow-sm hover:shadow-md transition duration-300 flex flex-col" data-category="UI/UX" data-title="Lumière Brand UI Kit & Figma System">
-                <div class="relative h-64 bg-[#F3EDE4] overflow-hidden group">
-                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" alt="Lumière UI Kit" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-[#2D2420] text-xs font-semibold px-3 py-1 rounded-full border border-[#E8DFD5]">UI/UX Kit</span>
-                    <span class="absolute top-4 right-4 bg-rose-700 text-white text-xs font-semibold px-3 py-1 rounded-full">$79</span>
+            <div class="product-card bg-white rounded-3xl overflow-hidden border border-[#E8DFD5] shadow-sm hover:shadow-xl hover:border-rose-300 transition-all duration-500 flex flex-col group" data-category="UI/UX" data-title="Lumière Brand UI Kit & Figma System">
+                <div class="relative h-72 bg-[#F3EDE4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" alt="Lumière UI Kit" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300"></div>
+                    <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md text-[#2D2420] text-[11px] font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-[#E8DFD5] shadow-sm">UI/UX Kit</span>
+                    <span class="absolute top-4 right-4 bg-rose-700 text-white text-xs font-bold px-3.5 py-1.5 rounded-full shadow-md">$79</span>
                 </div>
-                <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="font-serif text-xl font-semibold text-[#2D2420] mb-2">Lumière Brand UI Kit</h3>
-                    <p class="text-sm text-[#6E6058] mb-6 flex-grow">Comprehensive Figma design system with reusable components, style guides, and responsive layout grids.</p>
+                <div class="p-7 flex flex-col flex-grow">
+                    <div class="flex items-center gap-1 text-amber-500 text-xs mb-2">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <span class="text-[#8C7A6B] ml-1">(36 reviews)</span>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold text-[#2D2420] mb-2 group-hover:text-rose-700 transition">Lumière Brand UI Kit</h3>
+                    <p class="text-sm text-[#6E6058] mb-6 flex-grow leading-relaxed">Comprehensive Figma design system featuring reusable components, style guides, and responsive layout grids.</p>
                     <div class="flex items-center justify-between pt-4 border-t border-[#F3EDE4]">
-                        <button onclick="openModal('Lumière Brand UI Kit', '$79', 'Complete Figma design system tailored for branding agencies and creative studios. Includes 150+ components, typography scales, token variables, and responsive variants.')" class="text-xs font-bold uppercase tracking-wider text-rose-700 hover:underline">Quick View</button>
-                        <button onclick="addToCart('Lumière Brand UI Kit', 79)" class="bg-[#2D2420] text-white text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full hover:bg-rose-700 transition">Add to Cart</button>
+                        <button onclick="openModal('Lumière Brand UI Kit', '$79', 'Complete Figma design system tailored for branding agencies and creative studios. Includes 150+ components, typography scales, token variables, and responsive variants.')" class="text-xs font-bold uppercase tracking-wider text-rose-700 hover:text-rose-900 transition flex items-center gap-1.5">
+                            Quick View <i class="fa-solid fa-arrow-right-long"></i>
+                        </button>
+                        <button onclick="addToCart('Lumière Brand UI Kit', 79)" class="bg-[#2D2420] text-white text-xs font-semibold uppercase tracking-wider px-5.5 py-3 rounded-full hover:bg-rose-700 transition shadow-sm">Add to Cart</button>
                     </div>
                 </div>
             </div>
 
             <!-- Card 3 -->
-            <div class="product-card bg-white rounded-2xl overflow-hidden border border-[#E8DFD5] shadow-sm hover:shadow-md transition duration-300 flex flex-col" data-category="Wireframe" data-title="Veda Minimalist Architecture & Portfolio Concept">
-                <div class="relative h-64 bg-[#F3EDE4] overflow-hidden group">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Veda Portfolio" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-[#2D2420] text-xs font-semibold px-3 py-1 rounded-full border border-[#E8DFD5]">Design Idea</span>
-                    <span class="absolute top-4 right-4 bg-rose-700 text-white text-xs font-semibold px-3 py-1 rounded-full">$49</span>
+            <div class="product-card bg-white rounded-3xl overflow-hidden border border-[#E8DFD5] shadow-sm hover:shadow-xl hover:border-rose-300 transition-all duration-500 flex flex-col group" data-category="Wireframe" data-title="Veda Minimalist Architecture & Portfolio Concept">
+                <div class="relative h-72 bg-[#F3EDE4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Veda Portfolio" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300"></div>
+                    <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md text-[#2D2420] text-[11px] font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-[#E8DFD5] shadow-sm">Design Idea</span>
+                    <span class="absolute top-4 right-4 bg-rose-700 text-white text-xs font-bold px-3.5 py-1.5 rounded-full shadow-md">$49</span>
                 </div>
-                <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="font-serif text-xl font-semibold text-[#2D2420] mb-2">Veda Portfolio Concept</h3>
-                    <p class="text-sm text-[#6E6058] mb-6 flex-grow">An editorial, asymmetry-focused design idea and wireframe concept for creative portfolios and boutique agencies.</p>
+                <div class="p-7 flex flex-col flex-grow">
+                    <div class="flex items-center gap-1 text-amber-500 text-xs mb-2">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        <span class="text-[#8C7A6B] ml-1">(29 reviews)</span>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold text-[#2D2420] mb-2 group-hover:text-rose-700 transition">Veda Portfolio Concept</h3>
+                    <p class="text-sm text-[#6E6058] mb-6 flex-grow leading-relaxed">An editorial, asymmetry-focused design idea and wireframe concept for creative portfolios and boutique agencies.</p>
                     <div class="flex items-center justify-between pt-4 border-t border-[#F3EDE4]">
-                        <button onclick="openModal('Veda Portfolio Concept', '$49', 'An inspiring web design wireframe concept featuring grid-breaking layouts, smooth horizontal scrolling sections, and bold serif editorial typography.')" class="text-xs font-bold uppercase tracking-wider text-rose-700 hover:underline">Quick View</button>
-                        <button onclick="addToCart('Veda Portfolio Concept', 49)" class="bg-[#2D2420] text-white text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full hover:bg-rose-700 transition">Add to Cart</button>
+                        <button onclick="openModal('Veda Portfolio Concept', '$49', 'An inspiring web design wireframe concept featuring grid-breaking layouts, smooth horizontal scrolling sections, and bold serif editorial typography.')" class="text-xs font-bold uppercase tracking-wider text-rose-700 hover:text-rose-900 transition flex items-center gap-1.5">
+                            Quick View <i class="fa-solid fa-arrow-right-long"></i>
+                        </button>
+                        <button onclick="addToCart('Veda Portfolio Concept', 49)" class="bg-[#2D2420] text-white text-xs font-semibold uppercase tracking-wider px-5.5 py-3 rounded-full hover:bg-rose-700 transition shadow-sm">Add to Cart</button>
                     </div>
                 </div>
             </div>
+
         </div>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="bg-white border-t border-[#E8DFD5] py-12 mt-auto">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div class="flex items-center gap-3">
-                <div class="w-8 h-8 rounded-full border border-[#D5C7B8] flex items-center justify-center bg-[#FAF6F0]">
-                    <span class="font-serif font-bold text-sm text-rose-700">D</span>
-                </div>
-                <span class="font-serif font-medium text-[#2D2420]">Devigns — From भारत to the World.</span>
-            </div>
-            <p class="text-xs text-[#6E6058]">Devigns © 2026. All rights reserved.</p>
-        </div>
-    </footer>
-
     <!-- CART SIDEBAR DRAWER -->
     <div id="cart-drawer" class="fixed inset-0 z-50 overflow-hidden hidden">
-        <div class="absolute inset-0 bg-black/30 backdrop-blur-sm transition-opacity" onclick="toggleCart()"></div>
+        <div class="absolute inset-0 bg-black/40 backdrop-blur-sm transition-opacity" onclick="toggleCart()"></div>
         <div class="absolute inset-y-0 right-0 max-w-full flex pl-10">
             <div class="w-screen max-w-md bg-[#FAF6F0] shadow-2xl flex flex-col border-l border-[#E8DFD5]">
                 <div class="p-6 flex items-center justify-between border-b border-[#E8DFD5] bg-white">
                     <h2 class="font-serif text-xl font-semibold text-[#2D2420]">Your Cart</h2>
-                    <button onclick="toggleCart()" class="p-2 text-[#6E6058] hover:text-[#2D2420]">
+                    <button onclick="toggleCart()" class="p-2 text-[#6E6058] hover:text-[#2D2420] transition">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                     </button>
                 </div>
@@ -187,7 +210,7 @@
                         <span>Subtotal</span>
                         <span id="cart-subtotal">$0</span>
                     </div>
-                    <button onclick="alert('Proceeding to secure checkout...')" class="w-full bg-[#2D2420] text-white py-3.5 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-rose-700 transition">Proceed to Checkout</button>
+                    <button onclick="alert('Proceeding to secure checkout...')" class="w-full bg-[#2D2420] text-white py-3.5 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-rose-700 transition shadow-sm">Proceed to Checkout</button>
                 </div>
             </div>
         </div>
@@ -195,7 +218,7 @@
 
     <!-- PRODUCT QUICK VIEW MODAL -->
     <div id="product-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
-        <div class="absolute inset-0 bg-black/40 backdrop-blur-sm" onclick="closeModal()"></div>
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" onclick="closeModal()"></div>
         <div class="relative bg-white rounded-3xl max-w-lg w-full p-8 border border-[#E8DFD5] shadow-2xl z-10">
             <button onclick="closeModal()" class="absolute top-6 right-6 text-[#6E6058] hover:text-[#2D2420]">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
@@ -207,6 +230,23 @@
             <button id="modal-add-btn" class="w-full bg-[#2D2420] text-white py-3 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-rose-700 transition">Add to Cart</button>
         </div>
     </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-[#E8DFD5] py-12 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full border border-[#D5C7B8] flex items-center justify-center bg-[#FAF6F0]">
+                    <span class="font-serif font-bold text-sm text-rose-700">D</span>
+                </div>
+                <span class="font-serif font-medium text-[#2D2420]">Devigns — From भारत to the World.</span>
+            </div>
+            <p class="text-xs text-[#6E6058]">Devigns © <span id="year">2026</span>. All rights reserved.</p>
+            <p id="legal" class="text-xs text-[#6E6058]">
+                <a href="/terms-and-conditions.html" target="_blank" class="hover:text-rose-700 transition">Terms & Conditions</a> |
+                <a href="/privacy-policy.html" target="_blank" class="hover:text-rose-700 transition">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
 
     <!-- JAVASCRIPT LOGIC -->
     <script>
@@ -278,11 +318,11 @@
             const buttons = document.querySelectorAll('#filter-buttons button');
 
             buttons.forEach(btn => {
-                btn.classList.remove('bg-[#2D2420]', 'text-white');
+                btn.classList.remove('bg-[#2D2420]', 'text-white', 'shadow-sm');
                 btn.classList.add('bg-[#FAF6F0]', 'text-[#5A4E46]');
             });
             event.target.classList.remove('bg-[#FAF6F0]', 'text-[#5A4E46]');
-            event.target.classList.add('bg-[#2D2420]', 'text-white');
+            event.target.classList.add('bg-[#2D2420]', 'text-white', 'shadow-sm');
 
             cards.forEach(card => {
                 if (category === 'all' || card.getAttribute('data-category') === category) {
@@ -306,22 +346,10 @@
                 }
             });
         }
+
+        // Set current year automatically
+        document.getElementById('year').innerText = new Date().getFullYear();
     </script>
-</body>
-
-
-    <footer>
-        <p><span style="font-family: 'Amsterdam Three';" id="company" class="hidden"
-                data-animation="unblur">Devigns</span> &copy;<span id="year"></span>.
-            All rights
-            reserved.</p>
-        <p id="legal">
-            <a href="/terms-and-conditions.html" target="_blank">Terms & Conditions </a> |
-            <a href="/privacy-policy.html" target="_blank">Privacy Policy</a>
-        </p>
-
-    </footer>
-
 
     <script defer src="script.js"></script>
 
